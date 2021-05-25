@@ -18,15 +18,16 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  logo:{
-    width:'20%',
-    marginLeft:theme.spacing(3),
+  logo: {
+    width: '20%',
+    marginLeft: theme.spacing(3),
   },
-  bcg:{
-    backgroundColor:'black',
-    height:'10vh',
-    justifyContent:'center',
-    padding:theme.spacing(5),
+  bcg: {
+    backgroundColor: 'black',
+    height: '10vh',
+    justifyContent: 'center',
+    padding: theme.spacing(5),
+    borderBottom: '15px solid white',
   }
 }));
 
@@ -37,7 +38,7 @@ export default function NavBar() {
     <div className={classes.root}>
       <AppBar className={classes.bcg} position="fixed">
         <Toolbar >
-          <img className={classes.logo} src={process.env.PUBLIC_URL+'/images/logo.png' } alt='logo'/>
+          <img className={classes.logo} src={process.env.PUBLIC_URL + '/images/logo.png'} alt='logo' />
           <BigMenu />
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
