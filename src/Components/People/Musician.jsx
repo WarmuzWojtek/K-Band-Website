@@ -13,7 +13,15 @@ const useStyles = makeStyles((theme) => {
     root: {
       maxWidth: 345,
       marginBottom: theme.spacing(5),
+      backgroundColor: '#F6F4F3',
     },
+    image: {
+      width: '100%',
+      transition: '0.3s',
+      '&:hover': {
+        width: '110%',
+      },
+    }
   }
 });
 
@@ -24,16 +32,17 @@ export default function MusicianCard({ name, foto, desc }) {
   const role = desc
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} elevation={24}>
       <CardActionArea>
         <CardMedia
+          className={classes.image}
           component="img"
           alt={person}
           height="345"
           image={process.env.PUBLIC_URL + url}
           title={person}
         />
-        <CardContent>
+        <CardContent >
           <Typography gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
