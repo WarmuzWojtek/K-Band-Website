@@ -1,9 +1,7 @@
 import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import MusicianCard from './Musician'
-import Grow from '@material-ui/core/Grow';
 import { Maly, Rudy, Katiap, Jedrek, Kaszka, PeopleDecs } from '../../Constants/Friends'
-import Zoom from '@material-ui/core/Zoom';
 import Slide from '@material-ui/core/Slide';
 
 
