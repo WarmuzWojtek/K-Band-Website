@@ -59,5 +59,31 @@ export const tapes = [
       '20. Huta',
     ]
   },
+  {
+    title:'Mijający czas',
+    year:1995,
+    label:'Tylko Pank',
+    medium:'Kaseta',
+    foto:'/images/mijajacy.jpg',
+    description:' Drugi materiał nagrany w studio - bodajże "Gamma Studio" dla wydawnictwa Tylko Pank',
+    songs:[
+      '1. Izba', 
+      '2. Pięść',
+      '3. 2002',
+      '4. Rasizm',
+      '5. Idziesz na wojnę',
+      '6. Jadą łysi (muz. Black Sabath)',
+      '7. Fałszywy',
+      '8. Ballada...(dla Zbycha)',
+      '9. Mijający czas',
+      '10. 1 maj',
+      '11. Ty',
+      '12. Mur nienawiści',
+      '13. Kto',
+      '14. Prywatki',
+      '15. Czemu jesteście',
+      '16. Czas rozstania',
+    ]
+  },
 
 ]
