@@ -13,6 +13,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 
 
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 0,
-    paddingTop: '143.75%',
+    paddingTop: '100%',
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -35,10 +36,18 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
+  songs: {
+    display: 'block',
+  },
+  songItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  }
 
 }));
 
-export default function CasetteCard({ title, year, label, medium, foto, description, songs }) {
+export default function CdCard({ title, year, label, medium, foto, description, songs }) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -65,7 +74,14 @@ export default function CasetteCard({ title, year, label, medium, foto, descript
       />
       <CardContent>
         {songs.map(song =>
-          <Typography component='a'>{song}</Typography>)}
+          <div className={classes.songItem}>
+            <Typography className={classes.songs}>{song}</Typography>
+
+            <Typography className={classes.songItem} component='button'>Posłuchaj<PlayArrowIcon /></Typography>
+
+
+          </div>
+        )}
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
