@@ -13,7 +13,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import TransitionsModal from '../AudioModal/AudioModal'
 
 
 
@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: theme.spacing(1),
   }
 
 }));
@@ -76,10 +77,7 @@ export default function CdCard({ title, year, label, medium, foto, description, 
         {songs.map(song =>
           <div className={classes.songItem}>
             <Typography className={classes.songs}>{song}</Typography>
-
-            <Typography className={classes.songItem} component='button'>Posłuchaj<PlayArrowIcon /></Typography>
-
-
+            <TransitionsModal title={song} />
           </div>
         )}
       </CardContent>

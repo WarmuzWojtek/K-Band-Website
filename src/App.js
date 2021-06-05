@@ -6,6 +6,7 @@ import Welcome from './Components/Welcome/Welcome.jsx'
 import People from './Components/People/People.jsx'
 import Places from './Components/Places/Places.jsx'
 import Discography from './Components/Discography/Discography.jsx'
+import MediaControlCard from './Components/AudioModal/AudioControls.jsx'
 
 
 
@@ -16,6 +17,7 @@ function App() {
       {/* <Header/>
       <Welcome/> */}
       <Discography/>
+      {/* <MediaControlCard/> */}
     </div>
   );
 }
