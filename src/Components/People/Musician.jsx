@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: '#F6F4F3',
     },
     image: {
-      width: '100%',
+      // width: '100%',
       transition: '0.3s',
       '&:hover': {
         width: '110%',
