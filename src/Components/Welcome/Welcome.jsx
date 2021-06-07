@@ -49,12 +49,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Main() {
 
   const classes = useStyles();
-  const checked = useWindowPosition('header', 0.3);
+  // const checked = useWindowPosition('header', 0.3);
 
   return (
     <div className={classes.container}  >
       <Container>
-        <Grow in={checked} timeout={1000}>
+        <Grow in={true} timeout={1000}>
           <Card className={classes.root} variant="elevation"  >
 
             <CardContent  >
