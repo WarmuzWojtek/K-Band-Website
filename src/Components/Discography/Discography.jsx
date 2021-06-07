@@ -1,9 +1,10 @@
 import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import MusicianCard from './Musician'
+import CasetteCard from './Tape'
+import CdCard from './Cd'
+import { Maly, Rudy, Katiap, Jedrek, Kaszka, PeopleDecs } from '../../Constants/Friends'
 import Slide from '@material-ui/core/Slide';
-import { people, PeopleDecs } from '../../Constants/Friends'
-
+import { tapes, cds } from '../../Constants/Recordings'
 
 
 const useStyles = makeStyles((theme) => {
@@ -36,20 +37,21 @@ const useStyles = makeStyles((theme) => {
 })
 
 
-export default function People() {
+export default function Discography() {
   const classes = useStyles();
   return (
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h2'>Ludzie</Typography>
+          <Typography className={classes.title} variant='h2'>Nagrania</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
-          {people.map(musician =>
-            <MusicianCard name={musician.name} foto={musician.foto} desc={musician.desc} />
+          {tapes.map(tape =>
+            <CasetteCard title={tape.title} year={tape.year} label={tape.year} medium={tape.medium} foto={tape.foto} description={tape.description} songs={tape.songs} />)}
+          {cds.map(cd =>
+            <CdCard title={cd.title} year={cd.year} label={cd.year} medium={cd.medium} foto={cd.foto} description={cd.description} songs={cd.songs} />
           )}
         </Container>
       </Slide>
     </div >
   );
 }
-
