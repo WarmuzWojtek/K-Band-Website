@@ -13,6 +13,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import TransitionsModal from '../AudioModal/AudioModal'
 
 
 
@@ -34,6 +35,15 @@ const useStyles = makeStyles((theme) => ({
   },
   expandOpen: {
     transform: 'rotate(180deg)',
+  },
+  songs: {
+    display: 'block',
+  },
+  songItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: theme.spacing(1),
   },
 
 }));
@@ -65,7 +75,11 @@ export default function CasetteCard({ title, year, label, medium, foto, descript
       />
       <CardContent>
         {songs.map(song =>
-          <Typography component='a'>{song}</Typography>)}
+          <div className={classes.songItem}>
+            <Typography className={classes.songs}>{song}</Typography>
+            <TransitionsModal title={song} />
+          </div>
+        )}
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
