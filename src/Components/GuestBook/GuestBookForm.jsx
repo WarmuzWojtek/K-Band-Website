@@ -1,15 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
-  fade,
-  ThemeProvider,
   withStyles,
   makeStyles,
-  createMuiTheme,
+
 } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
-import { Paper } from '@material-ui/core';
+import Post from './Post'
+import axios from "axios";
 
 const CssTextField = withStyles({
   root: {
@@ -58,16 +57,28 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
+
+
 export default function GuestBookForm() {
   const classes = useStyles();
-
   const [nameValue, setNameValue] = useState('');
-
   const [messageValue, setMessageValue] = useState('');
-
-
-
-
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    axios.get("http://localhost:8000/guestBookPosts/")
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+        setError(error);
+      })
+      .finally(() => { setLoading(false); });
+  }, []);
+  if (loading) return "Loading...";
+  if (error) return "Error!";
 
   function handleNameChange(e) {
     setNameValue(e.target.value)
@@ -75,14 +86,33 @@ export default function GuestBookForm() {
   function handleMessageChange(e) {
     setMessageValue(e.target.value)
   }
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    const nameValidate = nameValue;
+    if (!nameValidate) return alert('Wpisz Imię/Pseudo!');
+
+    const messageValidate = messageValue;
+    if (!messageValidate) return alert('Wpisz treść!');
+
+    const post = {
+      name: nameValue,
+      message: messageValue,
+    }
+
+    axios.post('http://localhost:8000/guestBookPosts/add', post)
+      .then(alert('Wpis dodany!'))
+      ;
+    window.location = '/ksiega';
+  }
 
   return (
-    <form className={classes.root} noValidate autoComplete="off" >
+    <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit} >
       <Typography className={classes.title} variant='h4' align='center'>Zostaw coś po sobie...</Typography>
-      <Paper>
-        <Typography variant='h4'>Bardzo fajny zespół</Typography>
-        <Typography variant='h6'>bruno Mars</Typography>
-      </Paper>
+
+      {data.map(post =>
+        <Post name={post.name} message={post.message} date={post.createdAt} />
+      )}
       <CssTextField
         id="name"
         label="Imię/Ksywa/Pseudo"
