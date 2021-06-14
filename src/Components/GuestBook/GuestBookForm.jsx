@@ -107,12 +107,13 @@ export default function GuestBookForm() {
   }
 
   return (
+
     <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit} >
       <Typography className={classes.title} variant='h4' align='center'>Zostaw coś po sobie...</Typography>
 
-      {data.map(post =>
+      {/* {data.map(post =>
         <Post name={post.name} message={post.message} date={post.createdAt} />
-      )}
+      )} */}
       <CssTextField
         id="name"
         label="Imię/Ksywa/Pseudo"
@@ -131,6 +132,11 @@ export default function GuestBookForm() {
         value={messageValue}
         onChange={handleMessageChange} />
       <Button type='submit' className={classes.btn} color='disabled' variant='contained' >wyślij</Button>
+
+      {data.map(post =>
+        <Post name={post.name} message={post.message} date={post.createdAt} />
+      )}
     </form>
+
   );
 }
