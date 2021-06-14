@@ -33,26 +33,13 @@ export default function BigMenu() {
 
   return (
     <div className={classes.root}>
-      <NavLink to="/ludzie">
-        <Typography className={classes.item} >Ludzie</Typography>
-      </NavLink>
-      <NavLink to="/miejsca">
-        <Typography className={classes.item} >Miejsca</Typography>
-      </NavLink>
-      <NavLink to="/plyty">
-        <Typography className={classes.item} >Dyskografia</Typography>
-      </NavLink>
-      <NavLink to="/media">
-        <Typography className={classes.item} >Media</Typography>
-      </NavLink>
-
-      <Typography className={classes.item} >Archiwalia</Typography>
-
-
-      <Typography className={classes.item} >Księga gości</Typography>
-
-      <Typography className={classes.item} >Kontakt</Typography>
-
+      <NavLink to="/ludzie" className={classes.item}>Ludzie</NavLink>
+      <NavLink to="/miejsca" className={classes.item}>Miejsca</NavLink>
+      <NavLink to="/plyty" className={classes.item}>Dyskografia</NavLink>
+      <NavLink to="/media" className={classes.item}>Media</NavLink>
+      <NavLink to="/archiwalia" className={classes.item}>Archiwalia</NavLink>
+      <NavLink to="/ksiega" className={classes.item}>Księga gości</NavLink>
+      <NavLink to="/kontakt" className={classes.item}>Kontakt</NavLink>
     </div>
   );
 }
