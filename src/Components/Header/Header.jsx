@@ -1,8 +1,12 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Paper, Typography } from '@material-ui/core';
+import { Container, Paper } from '@material-ui/core';
+import Typing from './Typing'
+import DesktopCarousel from './DesktopCarousel';
+import MobileCarousel from './MobileCarousel';
+import { useViewport } from '../../Hook/useViewport'
+
 
 
 const useStyles = makeStyles((theme) => {
@@ -11,10 +15,22 @@ const useStyles = makeStyles((theme) => {
             position: 'relative',
             display: 'flex',
             justifyContent: 'space-evenly',
-            height: '90vh',
+            minHeight: '90vh',
             marginTop: '10vh',
             zIndex: 2,
+            flexWrap: 'wrap',
+            padding: theme.spacing(2),
+            '@media(max-width:960px)': {
+                minHeight: '140vh',
+            },
+            '@media(max-width:660px)': {
+                minHeight: '120vh'
 
+            },
+            '@media(max-width:460px)': {
+                minHeight: '100vh'
+
+            },
         },
         carouselPaper: {
             display: 'flex',
@@ -22,9 +38,14 @@ const useStyles = makeStyles((theme) => {
             alignItems: 'center',
             width: '60%',
             background: 'none',
-        },
-        carousel: {
-            width: '100%',
+            '@media(max-width:960px)': {
+                width: '90%',
+                order: 1,
+            },
+            '@media(max-width:660px)': {
+                width: '100%',
+                order: 1,
+            },
         },
         typoPaper: {
             display: 'flex',
@@ -33,6 +54,10 @@ const useStyles = makeStyles((theme) => {
             alignItems: 'center',
             width: '40%',
             background: 'none',
+            '@media(max-width:960px)': {
+                width: '90%',
+                minHeight: '25vh',
+            },
         },
         legend: {
             fontSize: '25px',
@@ -44,52 +69,53 @@ const useStyles = makeStyles((theme) => {
         overlay: {
             position: 'absolute',
             width: '100%',
-            height: '22.5vh',
+            // height: '22.5vh',
+            height: '100%',
             left: 0,
             bottom: 0,
             backgroundImage: 'linear-gradient(transparent, black)',
             zIndex: 1,
+            '@media(max-width:960px)': {
+                height: '150vh',
+            },
+            '@media(max-width:660px)': {
+                height: '130vh'
+
+            },
+            '@media(max-width:460px)': {
+                height: '110vh'
+
+            },
         }
 
     }
 });
 
-function PhotoCarousel() {
-    const classes = useStyles();
-
-    return (
-
-        <Carousel autoPlay interval={5000} showThumbs={false} showIndicators={true} showStatus={false} infiniteLoop className={classes.carousel}>
-            <div>
-                <img src={process.env.PUBLIC_URL + '/images/a.jpg'} alt='' />
-                <p className='legend'>Historia,koncerty, wydawnictwa</p>
-            </div>
-            <div>
-                <img src={process.env.PUBLIC_URL + '/images/b.jpg'} alt='' />
-                <p className='legend' >Nigdzie nie publikowane dotąd nagrania</p>
-            </div>
-            <div>
-                <img src={process.env.PUBLIC_URL + '/images/d.jpg'} alt='' />
-                <p className='legend' >Archiwalia, Newsy, Komentarze</p>
-            </div>
-        </Carousel>
-
-    );
-};
 
 export default function Header() {
     const classes = useStyles();
+    const { width } = useViewport();
+
+    const setSource = () => {
+        if (width < 960) {
+            return `url(${process.env.PUBLIC_URL + '/images/graffitiv1.jpg'})`
+        } else return `url(${process.env.PUBLIC_URL + '/images/graffiti.jpg'})`
+    }
+
+    const source = setSource();
+
+
+
+
     return (
-        <div id='header' style={{ backgroundImage: `url(${process.env.PUBLIC_URL + 'images/graffiti.jpg'})` }}>
+        <div id='header' style={{ backgroundImage: `${source}`, backgroundPosition: 'left,bottom', backgroundSize: 'cover' }}>
             <div className={classes.overlay}></div>
             <Container className={classes.root}>
                 <Paper className={classes.carouselPaper}>
-                    <PhotoCarousel />
+                    {width > 960 ? <DesktopCarousel /> : <MobileCarousel />}
                 </Paper>
                 <Paper className={classes.typoPaper}>
-                    <Typography className={classes.typo} variant='h2'>Punk</Typography>
-                    <Typography className={classes.typo} variant='h1'>Rock</Typography>
-                    <Typography className={classes.typo} variant='h2'>Kraków</Typography>
+                    <Typing />
                 </Paper>
             </Container>
         </div>
