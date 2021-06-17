@@ -42,17 +42,22 @@ const useStyles = makeStyles((theme) => {
 export default function GuestBook() {
   const classes = useStyles();
 
-  // const[data, setData]=useState(null);
-  // const[loading, setLoading]=useState(true);
-  // const[error, setError]=useState(null);
-  // useEffect(()=>{axios.get("http://localhost:8000")
-  // .then((response)=>{setData(response.data);
-  // })
-  // .catch((error)=>{console.error("Error fetching data: ", error);
-  // setError(error);})
-  // .finally(()=>{setLoading(false);});},[]);
-  // if(loading)return"Loading...";
-  // if(error)return"Error!";
+  // const [data, setData] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
+  // useEffect(() => {
+  //   axios.get("http://localhost:8000/guestBookPosts/")
+  //     .then((response) => {
+  //       setData(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data: ", error);
+  //       setError(error);
+  //     })
+  //     .finally(() => { setLoading(false); });
+  // }, []);
+  // if (loading) return "Loading...";
+  // if (error) return "Error!";
 
 
 
