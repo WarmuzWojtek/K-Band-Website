@@ -42,7 +42,7 @@ export default function People() {
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h2'>Ludzie</Typography>
+          <Typography className={classes.title} variant='h3'>Ludzie</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
           {people.map(musician =>
             <MusicianCard name={musician.name} foto={musician.foto} desc={musician.desc} />
