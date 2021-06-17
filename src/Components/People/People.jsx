@@ -1,8 +1,10 @@
-import { Container, Typography } from "@material-ui/core"
+import { Container, Typography, Paper } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import MusicianCard from './Musician'
 import Slide from '@material-ui/core/Slide';
 import { people, PeopleDecs } from '../../Constants/Friends'
+import '../../App.css'
+
 
 
 
@@ -17,6 +19,7 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
+      fontFamily: 'Nunito',
       width: '100%',
       marginBottom: theme.spacing(5),
       borderBottom: '3px solid white',
@@ -24,6 +27,7 @@ const useStyles = makeStyles((theme) => {
       color: 'white',
     },
     desc: {
+      fontFamily: 'Nunito',
       color: 'white',
       marginBottom: theme.spacing(5),
       textAlign: 'center',
@@ -31,7 +35,11 @@ const useStyles = makeStyles((theme) => {
     bcg: {
       background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)',
       marginTop: '10vh',
-    }
+    },
+    image: {
+      width: '100vw',
+      height: '80vh',
+    },
   }
 })
 
@@ -41,7 +49,9 @@ export default function People() {
   return (
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
+
         <Container className={classes.root}>
+
           <Typography className={classes.title} variant='h3'>Ludzie</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
           {people.map(musician =>

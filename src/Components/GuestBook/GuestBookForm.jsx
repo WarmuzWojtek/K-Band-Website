@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button'
 import Post from './Post'
 import axios from "axios";
 
+
 const CssTextField = withStyles({
   root: {
 
@@ -38,9 +39,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     '& > *': {
       margin: theme.spacing(2),
-      width: '80%',
-      '@media(max-width:600px)': {
-        width: '90%',
+      width: '75%',
+      '@media(max-width:660px)': {
+        width: '100%',
       }
     },
   },
@@ -60,12 +61,15 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function GuestBookForm() {
+
   const classes = useStyles();
+
   const [nameValue, setNameValue] = useState('');
   const [messageValue, setMessageValue] = useState('');
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     axios.get("http://localhost:8000/guestBookPosts/")
       .then((response) => {
@@ -111,9 +115,6 @@ export default function GuestBookForm() {
     <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit} >
       <Typography className={classes.title} variant='h4' align='center'>Zostaw coś po sobie...</Typography>
 
-      {/* {data.map(post =>
-        <Post name={post.name} message={post.message} date={post.createdAt} />
-      )} */}
       <CssTextField
         id="name"
         label="Imię/Ksywa/Pseudo"
