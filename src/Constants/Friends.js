@@ -46,6 +46,11 @@ export const people = [
       desc:'Gitarzysta, wokalista, autor tekstów'
   },
   {
+    name:'Darek',
+    foto:'/images/darek.jpg',
+    desc:'Basista'
+  },
+  {
       name:'Kaszka',
       foto:'/images/marcin.jpg.jpg',
       desc:'Basista'

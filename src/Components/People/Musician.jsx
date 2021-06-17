@@ -11,14 +11,19 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => {
   return {
     root: {
+      color: 'white',
       maxWidth: 345,
       marginBottom: theme.spacing(5),
-      backgroundColor: '#F6F4F3',
+      // backgroundColor: '#F6F4F3',
+      backgroundColor: 'rgba(0,0,0,0.2)',
     },
     image: {
-      // width: '100%',
+      position: 'relative',
+      left: '50%',
+      transform: 'translateX(-50%)',
       transition: '0.3s',
       '&:hover': {
+        transform: 'translate(-10% -10%)',
         width: '110%',
       },
     }
@@ -46,19 +51,19 @@ export default function MusicianCard({ name, foto, desc }) {
           <Typography gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="inherit" component="p">
             {role}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      {/* <CardActions>
         <Button size="small" color="primary">
           Share
         </Button>
         <Button size="small" color="primary">
           Learn More
         </Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
   );
 }
