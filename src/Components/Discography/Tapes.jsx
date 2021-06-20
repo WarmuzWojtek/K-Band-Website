@@ -19,18 +19,53 @@ import TransitionsModal from '../AudioModal/AudioModal'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    width: '100%',
+    // maxWidth: 345,
     marginBottom: theme.spacing(5),
+    background: 'rgba(255,255,255,0.9)',
+    padding: theme.spacing(4),
+    '@media(max-width:660px)': {
+      padding: theme.spacing(1),
+    },
+  },
+  title: {
+    textAlign: 'center',
+    borderBottom: '2px solid black',
+    marginBottom: theme.spacing(4),
+  },
+  wrapper: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    padding: theme.spacing(2),
+    '@media(max-width:660px)': {
+      flexWrap: 'wrap',
+      padding: theme.spacing(1),
+    },
+  },
+  aspectWrapper: {
+    width: '40%',
+    '@media(max-width:660px)': {
+      width: '100%',
+    },
   },
   media: {
+
     height: 0,
-    paddingTop: '100%',
+    paddingTop: '143.75%',
+
+  },
+  content: {
+    width: '40%',
+    '@media(max-width:660px)': {
+      width: '100%',
+    },
   },
   expand: {
+    background: 'lightgray',
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
+      duration: theme.transitions.duration.medium,
     }),
   },
   expandOpen: {
@@ -44,11 +79,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: theme.spacing(1),
-  }
+  },
 
 }));
 
-export default function CdCard({ title, year, label, medium, foto, description, songs }) {
+export default function CasetteCard({ title, year, label, medium, foto, description, songs }) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -58,36 +93,30 @@ export default function CdCard({ title, year, label, medium, foto, description, 
   };
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} elevation={12}>
       <CardHeader
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+        className={classes.title}
         title={title}
-        subheader={year}
+        subheader={'Data wydania: ' + year + '    Nośnik: ' + medium}
       />
-      <CardMedia
-        className={classes.media}
-        image={process.env.PUBLIC_URL + foto}
-        title=""
-      />
-      <CardContent>
-        {songs.map(song =>
-          <div className={classes.songItem}>
-            <Typography className={classes.songs}>{song}</Typography>
-            <TransitionsModal title={song} />
-          </div>
-        )}
-      </CardContent>
+      <div className={classes.wrapper}>
+        <div className={classes.aspectWrapper}>
+          <CardMedia
+            className={classes.media}
+            image={process.env.PUBLIC_URL + foto}
+            title=""
+          />
+        </div>
+        <CardContent className={classes.content}>
+          {songs.map(song =>
+            <div className={classes.songItem}>
+              <Typography variant='subtitle' className={classes.songs}>{song}</Typography>
+              <TransitionsModal title={song} />
+            </div>
+          )}
+        </CardContent>
+      </div>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,

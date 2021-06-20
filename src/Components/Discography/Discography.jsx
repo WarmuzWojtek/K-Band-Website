@@ -1,7 +1,7 @@
 import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import CasetteCard from './Tape'
-import CdCard from './Cd'
+import CasetteCard from './Tapes'
+import CdCard from './Cds'
 import { PeopleDecs } from '../../Constants/Friends'
 import Slide from '@material-ui/core/Slide';
 import { tapes, cds } from '../../Constants/Recordings'
@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => {
       justifyContent: 'space-evenly',
       padding: theme.spacing(5),
       margin: '0 auto',
+      '@media(max-width:660px)': {
+        padding: theme.spacing(2),
+      },
 
     },
     title: {
