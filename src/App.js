@@ -9,17 +9,19 @@ import Media from './Components/Media/Media.jsx'
 import GuestBook from './Components/GuestBook/GuestBook.jsx'
 import Discography from './Components/Discography/Discography.jsx'
 import Home from './Components/Home/Home.jsx'
+import {ViewportProvider} from './Hook/useViewport'
 
 
 
 
 function App() {
   return (
+    <ViewportProvider>
     <BrowserRouter>
       <div >
-        <header>
+        <div>
           <NavBar/>
-        </header>
+        </div>
         <section>
           <Route path="/" exact component={Home}></Route>
           <Route path="/ludzie" exact component={People}></Route>
@@ -31,6 +33,7 @@ function App() {
         <Footer/>
      </div>
     </BrowserRouter>
+    </ViewportProvider>
   );
 }
 
