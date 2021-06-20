@@ -49,11 +49,15 @@ export default function NavBar() {
   const classes = useStyles();
   const { width } = useViewport();
 
+  function handleReload() {
+    window.location = '/';
+  }
+
   return (
     <div className={classes.root}>
       <AppBar className={classes.bcg} position="fixed">
         <Toolbar className={classes.toolbar} >
-          <img className={classes.logo} src={process.env.PUBLIC_URL + '/images/logo.png'} alt='logo' />
+          <img onClick={handleReload} className={classes.logo} src={process.env.PUBLIC_URL + '/images/logo.png'} alt='logo' />
           {(width < 960) ? <MobileMenu /> : <BigMenu />}
         </Toolbar>
       </AppBar>
