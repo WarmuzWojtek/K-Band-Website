@@ -49,9 +49,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   media: {
-
+    transition: '0.3s',
+    boxShadow: '0 0 5px 5px grey',
     height: 0,
     paddingTop: '100%',
+    '&:hover': {
+      boxShadow: 'none',
+    }
 
   },
   content: {
