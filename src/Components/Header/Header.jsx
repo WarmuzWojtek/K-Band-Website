@@ -42,10 +42,6 @@ const useStyles = makeStyles((theme) => {
                 width: '90%',
                 order: 1,
             },
-            '@media(max-width:660px)': {
-                width: '100%',
-                order: 1,
-            },
         },
         typoPaper: {
             display: 'flex',
@@ -69,23 +65,11 @@ const useStyles = makeStyles((theme) => {
         overlay: {
             position: 'absolute',
             width: '100%',
-            // height: '22.5vh',
             height: '100%',
             left: 0,
-            bottom: 0,
+            top: 0,
             backgroundImage: 'linear-gradient(transparent, black)',
             zIndex: 1,
-            '@media(max-width:960px)': {
-                height: '150vh',
-            },
-            '@media(max-width:660px)': {
-                height: '130vh'
-
-            },
-            '@media(max-width:460px)': {
-                height: '110vh'
-
-            },
         }
 
     }
