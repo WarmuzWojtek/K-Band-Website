@@ -43,7 +43,7 @@ export default function Discography() {
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h2'>Nagrania</Typography>
+          <Typography className={classes.title} variant='h3'>Nagrania</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
           {tapes.map(tape =>
             <CasetteCard title={tape.title} year={tape.year} label={tape.year} medium={tape.medium} foto={tape.foto} description={tape.description} songs={tape.songs} />)}
