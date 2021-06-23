@@ -1,6 +1,7 @@
 import { Container, Paper, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Slide from '@material-ui/core/Slide';
+import '../../App.css'
 
 
 
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
+      fontFamily: 'Nunito',
       width: '100%',
       marginBottom: theme.spacing(5),
       borderBottom: '3px solid white',
@@ -23,6 +25,7 @@ const useStyles = makeStyles((theme) => {
       color: 'white',
     },
     desc: {
+      fontFamily: 'Nunito',
       color: 'white',
       marginBottom: theme.spacing(5),
       textAlign: 'center',

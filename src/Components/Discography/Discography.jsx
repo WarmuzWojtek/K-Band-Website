@@ -2,7 +2,7 @@ import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import CasetteCard from './Tape'
 import CdCard from './Cd'
-import { Maly, Rudy, Katiap, Jedrek, Kaszka, PeopleDecs } from '../../Constants/Friends'
+import { PeopleDecs } from '../../Constants/Friends'
 import Slide from '@material-ui/core/Slide';
 import { tapes, cds } from '../../Constants/Recordings'
 

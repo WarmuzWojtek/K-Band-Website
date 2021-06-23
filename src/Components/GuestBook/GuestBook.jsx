@@ -2,12 +2,7 @@ import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import GuestBookForm from './GuestBookForm'
 import Slide from '@material-ui/core/Slide';
-
-import { useState, useEffect } from "react";
-import axios from "axios";
-
-
-
+import '../../App.css'
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -20,6 +15,7 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
+      fontFamily: 'Nunito',
       width: '100%',
       marginBottom: theme.spacing(5),
       borderBottom: '3px solid white',
@@ -27,6 +23,7 @@ const useStyles = makeStyles((theme) => {
       color: 'white',
     },
     desc: {
+      fontFamily: 'Nunito',
       color: 'white',
       marginBottom: theme.spacing(5),
       textAlign: 'center',
@@ -42,29 +39,6 @@ const useStyles = makeStyles((theme) => {
 export default function GuestBook() {
   const classes = useStyles();
 
-  // const [data, setData] = useState(null);
-  // const [loading, setLoading] = useState(true);
-  // const [error, setError] = useState(null);
-  // useEffect(() => {
-  //   axios.get("http://localhost:8000/guestBookPosts/")
-  //     .then((response) => {
-  //       setData(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data: ", error);
-  //       setError(error);
-  //     })
-  //     .finally(() => { setLoading(false); });
-  // }, []);
-  // if (loading) return "Loading...";
-  // if (error) return "Error!";
-
-
-
-
-
-
-
   return (
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
@@ -72,7 +46,6 @@ export default function GuestBook() {
           <Typography className={classes.title} variant='h3'>Księga gości</Typography>
           <Typography className={classes.desc} variant='h6'>Baaaardzo prehistoryczna formuła, ale postaowiłem sprawdzić jak to będzie wyglądało w dzisiejszych czasach. Będzie nam bardzo miło jeśli zostawisz tu coś jeśli będziesz miał/miała ochotę. Jeśli natomiast masz jakąś sprawę i liczysz na odpowiedź po zapraszamy na maila lub do formularza kontaktowego. </Typography>
           <GuestBookForm />
-          {/* <Typography>{data}</Typography> */}
         </Container>
       </Slide>
     </div >

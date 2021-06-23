@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 
 import Typography from '@material-ui/core/Typography';
 import moment from 'moment';
+import '../../App.css'
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -14,13 +15,21 @@ const useStyles = makeStyles((theme) => {
 
     },
     typoName: {
-
+      fontFamily: 'Nunito',
     },
     typoMessage: {
-
+      fontFamily: 'Nunito',
     },
     typoDate: {
+      fontSize: '18px',
       textAlign: 'right',
+      fontFamily: 'Nunito',
+      '@media(max-width:960px)': {
+        fontSize: '16px'
+      },
+      '@media(max-width:660px)': {
+        fontSize: '14px'
+      },
     }
 
   }
