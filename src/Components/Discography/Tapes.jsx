@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     // maxWidth: 345,
     marginBottom: theme.spacing(5),
-    background: 'rgba(255,255,255,0.9)',
+    backgroundColor: 'rgba(255,255,255,0.9)',
     padding: theme.spacing(4),
     '@media(max-width:660px)': {
       padding: theme.spacing(1),
@@ -49,9 +49,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   media: {
-
+    transition: '0.3s',
+    boxShadow: '0 0 5px 5px grey',
     height: 0,
     paddingTop: '143.75%',
+    '&:hover': {
+      boxShadow: 'none',
+    }
 
   },
   content: {
