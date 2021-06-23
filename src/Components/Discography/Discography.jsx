@@ -5,6 +5,7 @@ import CdCard from './Cds'
 import { PeopleDecs } from '../../Constants/Friends'
 import Slide from '@material-ui/core/Slide';
 import { tapes, cds } from '../../Constants/Recordings'
+import SmallCasetteCard from './SmallTapes'
 
 
 const useStyles = makeStyles((theme) => {
@@ -48,11 +49,22 @@ export default function Discography() {
         <Container className={classes.root}>
           <Typography className={classes.title} variant='h3'>Nagrania</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
+
+          {/* 
           {tapes.map(tape =>
-            <CasetteCard title={tape.title} year={tape.year} label={tape.year} medium={tape.medium} foto={tape.foto} description={tape.description} songs={tape.songs} />)}
+            <CasetteCard title={tape.title} year={tape.year} label={tape.year} medium={tape.medium} foto={tape.foto} description={tape.description} songs={tape.songs} />)} */}
+
+          {tapes.map(tape =>
+            <SmallCasetteCard title={tape.title} year={tape.year} label={tape.label} medium={tape.medium} foto={tape.foto} />)}
+
           {cds.map(cd =>
-            <CdCard title={cd.title} year={cd.year} label={cd.year} medium={cd.medium} foto={cd.foto} description={cd.description} songs={cd.songs} />
+            <SmallCasetteCard title={cd.title} year={cd.year} label={cd.label} medium={cd.medium} foto={cd.foto} />
           )}
+
+
+          {/* {cds.map(cd =>
+            <CdCard title={cd.title} year={cd.year} label={cd.year} medium={cd.medium} foto={cd.foto} description={cd.description} songs={cd.songs} />
+          )} */}
         </Container>
       </Slide>
     </div >

@@ -71,7 +71,7 @@ export default function GuestBookForm() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/guestBookPosts/")
+    axios.get("http://localhost:8080/guestBookPosts/")
       .then((response) => {
         setData(response.data);
       })
