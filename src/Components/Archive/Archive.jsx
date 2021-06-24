@@ -40,7 +40,7 @@ export default function Archive() {
   const classes = useStyles();
   return (
     <div className={classes.bcg}>
-      <Slide direction="left" in={true} mountOnEnter unmountOnExit>
+      <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
           <Typography className={classes.title} variant='h3'>Wszystko w swoim czasie :)</Typography>
 
