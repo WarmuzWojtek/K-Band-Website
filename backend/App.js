@@ -6,6 +6,7 @@ const mongoose =require('mongoose');
 require('dotenv').config();
  
 const app=express();
+const port = process.env.PORT||8080;
 
 app.use(cors());
 app.use(express.json());
@@ -26,8 +27,8 @@ app.use('/guestBookPosts', guestBookPostRouter);
 
 
 
-app.listen(8000, ()=> console.log('server is listening on 8000'));
+app.listen(port, ()=> console.log(`server is listening on ${port}`));
 
-app.get("/", (req, res) => {
-  res.send('hejkl')
-})
+// app.get("/", (req, res) => {
+//   res.send('hejkl')
+// })
