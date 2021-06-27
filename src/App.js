@@ -10,8 +10,7 @@ import Archive from './Components/Archive/Archive.jsx'
 import GuestBook from './Components/GuestBook/GuestBook.jsx'
 import Discography from './Components/Discography/Discography.jsx'
 import Home from './Components/Home/Home.jsx'
-import FirstCasette from './Components/Discography/Casettes/Niebedzie.jsx'
-import SecondCasette from './Components/Discography/Casettes/Kto.jsx'
+import RecordingCard from './Components/Discography/RecordingCard.jsx'
 import {ViewportProvider} from './Hook/useViewport'
 
 
@@ -33,8 +32,8 @@ function App() {
           <Route path="/media" exact component={Media}></Route>
           <Route path="/archiwalia" exact component={Archive}></Route>
           <Route path="/ksiega" exact component={GuestBook}></Route>
-          <Route path="/1993" exact component={FirstCasette}></Route>
-          <Route path="/1994" exact component={SecondCasette}></Route>
+          <Route path="/plyty/:id" render={(props) => <RecordingCard {...props}  />} />
+
         </section>
         <Footer/>
      </div>

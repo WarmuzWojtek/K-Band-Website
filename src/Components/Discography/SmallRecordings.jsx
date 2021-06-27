@@ -56,10 +56,9 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SmallCasetteCard({ title, year, label, medium, foto }) {
+export default function SmallRecordingCard({ title, year, label, medium, foto, id }) {
   const classes = useStyles();
-
-  const path = "/" + year;
+  const path = "/plyty/:" + id;
 
   return (
     <div className={classes.root} >
