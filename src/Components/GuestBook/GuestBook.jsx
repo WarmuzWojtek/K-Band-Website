@@ -41,7 +41,7 @@ export default function GuestBook() {
 
   return (
     <div className={classes.bcg}>
-      <Slide direction="right" in={true} mountOnEnter unmountOnExit>
+      <Slide direction="left" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
           <Typography className={classes.title} variant='h3'>Księga gości</Typography>
           <Typography className={classes.desc} variant='h6'>Baaaardzo prehistoryczna formuła, ale postaowiłem sprawdzić jak to będzie wyglądało w dzisiejszych czasach. Będzie nam bardzo miło jeśli zostawisz tu coś jeśli będziesz miał/miała ochotę. Jeśli natomiast masz jakąś sprawę i liczysz na odpowiedź po zapraszamy na maila lub do formularza kontaktowego. </Typography>
