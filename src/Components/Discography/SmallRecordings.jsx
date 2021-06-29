@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: '15%',
     backgroundRepeat: 'no-repeat',
     backgroundColor: 'rgba(255,255,255,0.6)',
+    // '@media(max-width:600px)': {
+    //   width: 345,
+    // },
   },
   image: {
     width: 200,
@@ -27,6 +30,14 @@ const useStyles = makeStyles((theme) => ({
     '@media(max-width:600px)': {
       width: 345,
       height: 345,
+    },
+    '@media(max-width:460px)': {
+      width: 300,
+      height: 300,
+    },
+    '@media(max-width:360px)': {
+      width: 250,
+      height: 250,
     },
 
   },
@@ -41,8 +52,10 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(1),
   },
   typo: {
+    width: 220,
     '@media(max-width:600px)': {
       textAlign: 'center',
+      width: 'auto'
     },
   },
   btn: {
