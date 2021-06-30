@@ -134,7 +134,7 @@ export default function CasetteCard({ title, year, label, medium, foto, descript
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
-            {medium}
+            Wydawca: {label}
           </Typography>
           <Typography paragraph>
             {description}

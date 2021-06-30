@@ -6,6 +6,8 @@ import {
 } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography'
+import Paper from '@material-ui/core/Paper'
+
 import Button from '@material-ui/core/Button'
 import Post from './Post'
 import axios from "axios";
@@ -13,7 +15,9 @@ import axios from "axios";
 
 const CssTextField = withStyles({
   root: {
-
+    '&>*': {
+      color: 'white'
+    },
     '& label.Mui-focused': {
       color: '#eeeeee',
     },
@@ -55,6 +59,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '20px'
     }
   },
+  paper: {
+    background: 'rgba(0,0,0,0.2)',
+    padding: theme.spacing(2),
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+  },
+
 
 }));
 
@@ -111,33 +122,33 @@ export default function GuestBookForm() {
   }
 
   return (
+    <Paper className={classes.paper} elevation={10}>
+      <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit} >
+        <Typography className={classes.title} variant='h4' align='center'>Zostaw coś po sobie...</Typography>
 
-    <form className={classes.root} noValidate autoComplete="off" onSubmit={handleSubmit} >
-      <Typography className={classes.title} variant='h4' align='center'>Zostaw coś po sobie...</Typography>
+        <CssTextField
+          id="name"
+          label="Imię/Ksywa/Pseudo"
+          variant="outlined"
+          name="name"
+          value={nameValue}
+          onChange={handleNameChange}
+        />
 
-      <CssTextField
-        id="name"
-        label="Imię/Ksywa/Pseudo"
-        variant="outlined"
-        name="name"
-        value={nameValue}
-        onChange={handleNameChange}
-      />
+        <CssTextField
+          id="message"
+          label="Wiadomość"
+          variant="outlined"
+          multiline rows={5}
+          name="message"
+          value={messageValue}
+          onChange={handleMessageChange} />
+        <Button type='submit' className={classes.btn} color='disabled' variant='contained' >wyślij</Button>
 
-      <CssTextField
-        id="message"
-        label="Wiadomość"
-        variant="outlined"
-        multiline rows={5}
-        name="message"
-        value={messageValue}
-        onChange={handleMessageChange} />
-      <Button type='submit' className={classes.btn} color='disabled' variant='contained' >wyślij</Button>
-
-      {data.map(post =>
-        <Post name={post.name} message={post.message} date={post.createdAt} />
-      )}
-    </form>
-
+        {data.map(post =>
+          <Post name={post.name} message={post.message} date={post.createdAt} />
+        )}
+      </form>
+    </Paper>
   );
 }

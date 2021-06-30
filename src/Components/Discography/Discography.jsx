@@ -4,6 +4,7 @@ import { PeopleDecs } from '../../Constants/Friends'
 import Slide from '@material-ui/core/Slide';
 import { tapes } from '../../Constants/Recordings'
 import SmallRecordingCard from "./SmallRecordings"
+import { recordings } from '../../Constants/Recordings'
 
 
 const useStyles = makeStyles((theme) => {
@@ -45,8 +46,8 @@ export default function Discography() {
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h3'>Nagrania</Typography>
-          <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
+          <Typography className={classes.title} variant='h4'>Nagrania</Typography>
+          <Typography className={classes.desc} variant='h6'>{recordings} </Typography>
           {tapes.map((tape, index) =>
             <SmallRecordingCard title={tape.title} year={tape.year} label={tape.label} medium={tape.medium} foto={tape.foto} id={index} />)}
         </Container>

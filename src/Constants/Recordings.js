@@ -296,7 +296,7 @@ export const tapes = [
     label:'Olifant Records',
     medium:'CD/VA',
     foto:'/images/mumdm2.jpg',
-    description:'Pomijając naszą obecność to zdecydowania moja ulubiona składanka z tego gatunku. Naprawdę w większości mega hiciory, do dziś często wracam do tej płyty. Polecam każdemu! No i miło było znaleźć się tu obok takich tuzów jak Ramzes czy Po Prostu ',
+    description:'Pomijając naszą obecność to zdecydowanie moja ulubiona składanka z tego gatunku. Naprawdę w większości mega hiciory, do dziś często wracam do tej płyty. Polecam każdemu! No i miło było znaleźć się tu obok takich tuzów jak Ramzes czy Po Prostu ',
     songs:[
 
     {title:'01. The Gits - Muzyka dla elity', 
@@ -445,3 +445,4 @@ export const tapes = [
 
 ]
 
+export const recordings ='Chyba każdy kto tworzy jakieś dźwięki ma ochotę ich posłuchać w domowym zaciszu, czy wogóle utrwalić i móc odtworzyć w dowolnym momencie. Nas też to zawsze bardzo jarało i staraliśmy się wykorzystywać każdą okazję do tego by coś nagrać. Do tego kilka z tych rzeczy udało się pokazać szerszej publice dzięki oficjalnym wydawnictwom. Poniżej znajdziecie chyba wszystko co zostało przez nas zarejestrowane. Póki co do odsłuchu będzie zawsze kilka utworów. Jeśli strona kiedyś wyląduje na jakimś porządnym hostingu do docelowo będzie oczywiście wszystko!'

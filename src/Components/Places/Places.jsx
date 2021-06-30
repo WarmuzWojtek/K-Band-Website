@@ -74,7 +74,7 @@ export default function Places() {
     <div className={classes.bcg}>
       <Slide direction="left" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h3'>Miejsca</Typography>
+          <Typography className={classes.title} variant='h4'>Miejsca</Typography>
           <Typography className={classes.desc} variant='h6'>{placesSubtitle}</Typography>
           <Paper className={classes.textPaper} elevation={0}>
             <Typography variant='h5' className={classes.placeTitle} align='right'>{places[0].name}</Typography>
