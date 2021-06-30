@@ -85,66 +85,6 @@ export const tapes = [
       '16. Czas rozstania',
     ]
   },
-
-]
-
-export const cds = [
-  {
-    title:'Nie będziemy tacy',
-    year:2004,
-    label:'Jimmy Jazz Records',
-    medium:'CD',
-    foto:'/images/niebedziemy.jpg',
-    description:'Pierwszy materiał wydany na CD (Jimmy Jazz records, nagramy w Diamond Recordings Studio',
-    songs:[
-      '1. Urzędy', 
-      '2. Nie będziemy',
-      '3. Teraz niebo',
-      '4. To oni',
-      '5. Miliardy',
-      '6. Someone`s gonna die (muz. Blitz',
-      '7. Mój fiat',
-      '8. Nie zabijaj',
-      '9. Fucking life',
-      '10. Bez ostrzeżenia',
-      '11. Michał',
-      '12. Kolejne ofiary',
-      '13. Za pieniądze',
-      '14. Irak',
-      '15. Watch your back (muz.Cock Sparrer)',
-      '16. Dlaczego',
-      '17. AIDS',
-      '18. Instrumentalny',
-    ]
-  },
-  {
-    title:'Nie będziemy tacy',
-    year:2004,
-    label:'Jimmy Jazz Records',
-    medium:'CD',
-    foto:'/images/niebedziemy.jpg',
-    description:'Pierwszy materiał wydany na CD (Jimmy Jazz records, nagramy w Diamond Recordings Studio',
-    songs:[
-      '1. Urzędy', 
-      '2. Nie będziemy',
-      '3. Teraz niebo',
-      '4. To oni',
-      '5. Miliardy',
-      '6. Someone`s gonna die (muz. Blitz',
-      '7. Mój fiat',
-      '8. Nie zabijaj',
-      '9. Fucking life',
-      '10. Bez ostrzeżenia',
-      '11. Michał',
-      '12. Kolejne ofiary',
-      '13. Za pieniądze',
-      '14. Irak',
-      '15. Watch your back (muz.Cock Sparrer)',
-      '16. Dlaczego',
-      '17. AIDS',
-      '18. Instrumentalny',
-    ]
-  },
   {
     title:'Nie będziemy tacy',
     year:2004,
@@ -176,3 +116,4 @@ export const cds = [
   
 
 ]
+

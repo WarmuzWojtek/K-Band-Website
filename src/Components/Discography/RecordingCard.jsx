@@ -1,12 +1,9 @@
-import { Container, Typography } from "@material-ui/core"
+import { Container } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import CasetteCard from '../Tapes'
-// import CdCard from './Cds'
-import { PeopleDecs } from '../../../Constants/Friends'
+import CasetteCard from './Tapes'
 import Slide from '@material-ui/core/Slide';
-import { tapes, cds } from '../../../Constants/Recordings'
-import SmallCasetteCard from '../SmallTapes'
-import { NavLink } from "react-router-dom";
+import { tapes } from '../../Constants/Recordings'
+import CdCard from './Cds'
 
 
 const useStyles = makeStyles((theme) => {
@@ -42,15 +39,19 @@ const useStyles = makeStyles((theme) => {
 })
 
 
-export default function SecondCasette() {
+export default function RecordingCard({ match }) {
   const classes = useStyles();
+
+  const id = match.params.id.slice(1, 2);
+
+
   return (
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          {/* <Typography className={classes.title} variant='h3'>Nagrania</Typography>
-          <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography> */}
-          <CasetteCard title={tapes[1].title} year={tapes[1].year} label={tapes[1].year} medium={tapes[1].medium} foto={tapes[1].foto} description={tapes[1].description} songs={tapes[1].songs} />
+          {id < 3 ?
+            <CasetteCard title={tapes[id].title} year={tapes[id].year} label={tapes[id].year} medium={tapes[id].medium} foto={tapes[id].foto} description={tapes[id].description} songs={tapes[id].songs} /> :
+            <CdCard title={tapes[id].title} year={tapes[id].year} label={tapes[id].year} medium={tapes[id].medium} foto={tapes[id].foto} description={tapes[id].description} songs={tapes[id].songs} />}
         </Container>
       </Slide>
     </div >
