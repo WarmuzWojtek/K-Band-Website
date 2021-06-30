@@ -117,7 +117,7 @@ export default function ContactForm() {
       <form className={classes.root} noValidate autoComplete="off" onSubmit={sendEmail}>
         <CssTextField
           id="name"
-          label="Imię i Nazwisko"
+          label="Imię/Pseudo/Ksywa"
           variant="outlined"
           name="name"
           value={nameValue}
