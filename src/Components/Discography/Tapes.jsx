@@ -110,8 +110,10 @@ export default function CasetteCard({ title, year, label, medium, foto, descript
         <CardContent className={classes.content}>
           {songs.map(song =>
             <div className={classes.songItem}>
-              <Typography variant='subtitle' className={classes.songs}>{song}</Typography>
-              <TransitionsModal title={song} />
+              {/* <Typography variant='subtitle' className={classes.songs}>{song}</Typography> */}
+              <Typography variant='subtitle' className={classes.songs}>{song.title}</Typography>
+              {/* <TransitionsModal title={song} /> */}
+              <TransitionsModal title={song.title} link={song.link} foto={foto} />
             </div>
           )}
         </CardContent>

@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function TransitionsModal({ title }) {
+export default function TransitionsModal({ title, link, foto }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -37,9 +37,11 @@ export default function TransitionsModal({ title }) {
     setOpen(false);
   };
 
+  const isDisabled = link ? false : true;
+
   return (
     <div style={{ textAlign: 'center' }}>
-      <Button onClick={handleOpen} variant="outlined" size='small'>
+      <Button onClick={handleOpen} variant="outlined" size='small' disabled={isDisabled}>
         Posłuchaj
       </Button>
       <Modal
@@ -56,7 +58,7 @@ export default function TransitionsModal({ title }) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <MediaControlCard title={title} />
+            <MediaControlCard title={title} link={link} foto={foto} />
           </div>
         </Fade>
       </Modal>

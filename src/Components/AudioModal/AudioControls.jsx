@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function MediaControlCard({ title }) {
+export default function MediaControlCard({ title, link, foto }) {
   const classes = useStyles();
 
   return (
@@ -49,14 +49,14 @@ export default function MediaControlCard({ title }) {
         </CardContent>
         <div className={classes.controls}>
           <audio controls>
-            <source src={process.env.PUBLIC_URL + '/audio/01.mp3'} type="audio/mpeg"></source>
+            <source src={process.env.PUBLIC_URL + link} type="audio/mpeg"></source>
           </audio>
         </div>
       </div>
       <CardMedia
         // src={process.env.PUBLIC_URL + '/audio/01.mp3'}
         className={classes.cover}
-        image={process.env.PUBLIC_URL + '/images/AudioPlayer/niebedziemy.jpg'}
+        image={process.env.PUBLIC_URL + foto}
         title="Live from space album cover"
       />
     </Card>
