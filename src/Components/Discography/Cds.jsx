@@ -17,8 +17,9 @@ import TransitionsModal from '../AudioModal/AudioModal'
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
+    // minWIdth: 345,
     marginBottom: theme.spacing(5),
-    background: 'rgba(255,255,255,0.9)',
+    background: 'rgba(255,255,255,0.6)',
     padding: theme.spacing(4),
     '@media(max-width:660px)': {
       padding: theme.spacing(2),

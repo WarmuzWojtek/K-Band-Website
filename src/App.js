@@ -7,6 +7,7 @@ import Places from './Components/Places/Places.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Media from './Components/Media/Media.jsx'
 import Archive from './Components/Archive/Archive.jsx'
+import Contact from './Components/Contact/Contact.jsx'
 import GuestBook from './Components/GuestBook/GuestBook.jsx'
 import Discography from './Components/Discography/Discography.jsx'
 import Home from './Components/Home/Home.jsx'
@@ -32,6 +33,7 @@ function App() {
           <Route path="/media" exact component={Media}></Route>
           <Route path="/archiwalia" exact component={Archive}></Route>
           <Route path="/ksiega" exact component={GuestBook}></Route>
+          <Route path="/kontakt" exact component={Contact}></Route>
           <Route path="/plyty/:id" render={(props) => <RecordingCard {...props}  />} />
 
         </section>
