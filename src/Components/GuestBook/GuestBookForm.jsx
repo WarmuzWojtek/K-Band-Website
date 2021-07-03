@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
-import {
-  withStyles,
-  makeStyles,
-
-} from '@material-ui/core/styles';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
-
 import Button from '@material-ui/core/Button'
 import Post from './Post'
 import axios from "axios";
@@ -82,7 +77,7 @@ export default function GuestBookForm() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/guestBookPosts/")
+    axios.get("/backend/guestBookPosts/")
       .then((response) => {
         setData(response.data);
       })

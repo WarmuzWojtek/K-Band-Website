@@ -78,7 +78,7 @@ export default function Places() {
           <Typography className={classes.desc} variant='h6'>{placesSubtitle}</Typography>
           <Paper className={classes.textPaper} elevation={0}>
             <Typography variant='h5' className={classes.placeTitle} align='right'>{places[0].name}</Typography>
-            <Typography className={classes.place} variant='subtitle1' align='justify'>{places[0].description}</Typography>
+            <Typography className={classes.place} variant='h6' align='justify'>{places[0].description}</Typography>
           </Paper>
           <Paper className={classes.imagesPaper} elevation={0}>
             <img className={classes.placeImage} alt='' src={process.env.PUBLIC_URL + '/images/sckm.jpg'} />
@@ -88,11 +88,11 @@ export default function Places() {
           </Paper>
           <Paper className={classes.textPaper} elevation={0}>
             <Typography variant='h5' className={classes.placeTitle}>{places[1].name}</Typography>
-            <Typography className={classes.place} variant='body1' align='justify'>{places[1].description}</Typography>
+            <Typography className={classes.place} variant='h6' align='justify'>{places[1].description}</Typography>
           </Paper>
           <Paper className={classes.textPaper} elevation={0}>
             <Typography variant='h5' className={classes.placeTitle} align='right'>{places[2].name}</Typography>
-            <Typography className={classes.place} variant='body1' align='justify'>{places[2].description}</Typography>
+            <Typography className={classes.place} variant='h6' align='justify'>{places[2].description}</Typography>
           </Paper>
           <Paper className={classes.imagesPaper} elevation={0}>
             <img className={classes.placeImage} alt='' src={process.env.PUBLIC_URL + '/images/sckm.jpg'} />
