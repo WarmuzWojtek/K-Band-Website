@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => {
       color: 'white',
       maxWidth: 345,
       marginBottom: theme.spacing(5),
-      // backgroundColor: '#F6F4F3',
       backgroundColor: 'rgba(0,0,0,0.2)',
     },
     image: {

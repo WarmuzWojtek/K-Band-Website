@@ -1,7 +1,6 @@
 import Coverflow from 'react-coverflow';
 import { StyleRoot } from 'radium';
 
-
 function handleOnClick() {
   window.location = '/plyty';
 }

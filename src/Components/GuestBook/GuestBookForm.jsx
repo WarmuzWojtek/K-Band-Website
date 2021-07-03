@@ -65,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
 export default function GuestBookForm() {
 
   const classes = useStyles();
@@ -110,7 +109,7 @@ export default function GuestBookForm() {
       message: messageValue,
     }
 
-    axios.post('http://localhost:8000/guestBookPosts/add', post)
+    axios.post('backend/guestBookPosts/add', post)
       .then(alert('Wpis dodany!'))
       ;
     window.location = '/ksiega';

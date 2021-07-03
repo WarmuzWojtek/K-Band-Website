@@ -1,11 +1,8 @@
-import { Container, Paper, Typography } from "@material-ui/core"
+import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import ContactForm from './ContactForm'
 import Slide from '@material-ui/core/Slide';
 import '../../App.css'
-
-
-
 
 const useStyles = makeStyles((theme) => {
   return {

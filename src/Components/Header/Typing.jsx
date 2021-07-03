@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { init } from "ityped";
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Paper, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => {
   return {

@@ -26,9 +26,7 @@ export default function Footer() {
 
   return (
     <div className={classes.root}>
-
       <Typography className={classes.item} >&copy; Rudeboy Design 2021 </Typography>
-
     </div>
   );
 }

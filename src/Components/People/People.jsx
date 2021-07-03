@@ -5,9 +5,6 @@ import Slide from '@material-ui/core/Slide';
 import { people, PeopleDecs } from '../../Constants/Friends'
 import '../../App.css'
 
-
-
-
 const useStyles = makeStyles((theme) => {
   return {
     root: {
@@ -43,19 +40,16 @@ const useStyles = makeStyles((theme) => {
   }
 })
 
-
 export default function People() {
   const classes = useStyles();
   return (
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
-
         <Container className={classes.root}>
-
           <Typography className={classes.title} variant='h4'>Ludzie</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
           {people.map(musician =>
-            <MusicianCard name={musician.name} foto={musician.foto} desc={musician.desc} />
+            <MusicianCard key={musician.name} name={musician.name} foto={musician.foto} desc={musician.desc} />
           )}
         </Container>
       </Slide>

@@ -6,8 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => {
   return {
-
-
     carousel: {
       width: '100%',
     },
@@ -15,9 +13,6 @@ const useStyles = makeStyles((theme) => {
       fontSize: '25px',
       opacity: 1,
     },
-
-
-
   }
 });
 

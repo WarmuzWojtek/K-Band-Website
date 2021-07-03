@@ -1,19 +1,14 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) => {
   return {
-
-
     carousel: {
       width: '100%',
     },
-
-
-
   }
 });
 
@@ -36,7 +31,5 @@ export default function MobileCarousel() {
 
       </div>
     </Carousel>
-
-
   );
 };

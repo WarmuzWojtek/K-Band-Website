@@ -1,12 +1,11 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Paper } from '@material-ui/core';
 import Typing from './Typing'
 import DesktopCarousel from './DesktopCarousel';
 import MobileCarousel from './MobileCarousel';
 import { useViewport } from '../../Hook/useViewport'
-
 
 
 const useStyles = makeStyles((theme) => {
@@ -71,7 +70,6 @@ const useStyles = makeStyles((theme) => {
             backgroundImage: 'linear-gradient(transparent, black)',
             zIndex: 1,
         }
-
     }
 });
 
@@ -88,9 +86,6 @@ export default function Header() {
 
     const source = setSource();
 
-
-
-
     return (
         <div id='header' style={{ backgroundImage: `${source}`, backgroundPosition: 'left,bottom', backgroundSize: 'cover' }}>
             <div className={classes.overlay}></div>
@@ -104,7 +99,6 @@ export default function Header() {
             </Container>
         </div>
     )
-
 }
 
 
