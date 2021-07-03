@@ -74,7 +74,7 @@ export default function Media() {
     <div className={classes.bcg}>
       <Slide direction="left" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h3'>Media</Typography>
+          <Typography className={classes.title} variant='h4'>Media</Typography>
           <Typography className={classes.desc} variant='h6'>Tutaj jakieś video, które po nas zostały, zwykle montowane domowym sposobem przez Jędrka... Nie ma tego wiele na YT, a do tego większość kompletnie nieopisana. Przy okazji - jakby ktoś miał gdzieś nagrane jakieś starocie z nami to piszcie - chętnie przyganiemy na potrzeby tego miejsca.</Typography>
           <Paper className={classes.videoCard} elevation={5}>
             <Typography className={classes.videoDecsription}>Jedyny w naszej historii 'clip' zrealizowany z pomocą kolegów na krakowskim Solvayu i w LochNessie. Wszystko działo się w 2004 roku przy okazji wydania płyty w Jimmy Jazz Records </Typography>

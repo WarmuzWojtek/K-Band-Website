@@ -42,7 +42,7 @@ export default function Archive() {
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h3'>Wszystko w swoim czasie :)</Typography>
+          <Typography className={classes.title} variant='h4'>Wszystko w swoim czasie :)</Typography>
 
         </Container>
       </Slide>

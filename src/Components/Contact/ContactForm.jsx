@@ -10,25 +10,25 @@ import Paper from '@material-ui/core/Paper';
 
 const CssTextField = withStyles({
   root: {
-    // '&>*': {
-    //   color: 'white'
-    // },
+    '&>*': {
+      color: 'white'
+    },
 
     '& label.Mui-focused': {
-      color: 'black',
+      color: 'white',
     },
     '& .MuiInput-underline:after': {
-      borderBottomColor: 'black',
+      borderBottomColor: 'white',
     },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
-        borderColor: 'default',
+        borderColor: 'rgba(170,170,170)',
       },
       '&:hover fieldset': {
-        borderColor: 'black',
+        borderColor: 'white',
       },
       '&.Mui-focused fieldset': {
-        borderColor: 'black',
+        borderColor: 'white',
       },
     },
   },
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
-    backgroundColor: 'rgba(255,255,255,0.6)',
+    background: 'rgba(0,0,0,0.2)',
   },
   title: {
     margin: 0,
@@ -113,11 +113,11 @@ export default function ContactForm() {
   }
 
   return (
-    <Paper className={classes.paper}>
+    <Paper className={classes.paper} elevation={10}>
       <form className={classes.root} noValidate autoComplete="off" onSubmit={sendEmail}>
         <CssTextField
           id="name"
-          label="Imię i Nazwisko"
+          label="Imię/Pseudo/Ksywa"
           variant="outlined"
           name="name"
           value={nameValue}

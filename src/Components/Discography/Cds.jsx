@@ -132,7 +132,7 @@ export default function CdCard({ title, year, label, medium, foto, description, 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
-            {medium}
+            Wydawca: {label}
           </Typography>
           <Typography paragraph>
             {description}

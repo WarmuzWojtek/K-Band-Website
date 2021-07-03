@@ -37,7 +37,11 @@ const useStyles = makeStyles((theme) => {
       marginTop: '10vh',
       minHeight: '90vh',
     },
-
+    link: {
+      color: 'black',
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
+    }
 
   }
 })
@@ -49,8 +53,8 @@ export default function Contact() {
     <div className={classes.bcg}>
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h3'>Kontakt z nami</Typography>
-          <Typography className={classes.desc} variant='h6'>Jeśli masz jakąś sprawę/pytanie pisz na <a href="mailto:kastracjapunx@gmail.com">kastracjapunx@gmail.com </a>lub za pomocą poniższego formularza. Na powyższego maila ślijcie też proszę jeśli jesteście w posiadaniu jakichkolwiek archiwaliów z nami związanych. Możemy wspólnie tworzyć to miejsce!</Typography>
+          <Typography className={classes.title} variant='h4'>Kontakt z nami</Typography>
+          <Typography className={classes.desc} variant='h6'>Jeśli masz jakąś sprawę/pytanie pisz na  <a className={classes.link} href="mailto:kastracjapunx@gmail.com">kastracjapunx@gmail.com </a>  lub za pomocą poniższego formularza. Na powyższego maila ślijcie też proszę jeśli jesteście w posiadaniu jakichkolwiek archiwaliów z nami związanych. Możemy wspólnie tworzyć to miejsce!</Typography>
           <ContactForm />
         </Container>
       </Slide>

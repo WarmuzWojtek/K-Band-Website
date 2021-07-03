@@ -5,7 +5,7 @@ export const tapes = [
     label:'ABC Tapes',
     medium:'Kaseta',
     foto:'/images/niebedzie.jpg',
-    description:' Pierwszy niby-studyjny materiał, z tym, że studiem była klasa w mojej szkole, sprzętem - znaleziony przypadkiem w laboratorium elektronicznym mixer, a realizatorem Sexon - nasz kolega z osiedla, który w miarę ogarniał różnegi rodzaju sprzęty, a do tego miał w miarę dobry słuch.',
+    description:' Pierwszy niby-studyjny materiał, z tym, że studiem była sala lekcyjna w mojej szkole, sprzętem - znaleziony przypadkiem w laboratorium elektronicznym jakiś ruski mixer, a realizatorem Sexon - nasz kolega z osiedla, który w miarę ogarniał różnegi rodzaju sprzęty, a do tego miał w miarę dobry słuch. Nagraliśmy to w jakieś dwa popułudnia na tzw. "setkę". To byłe te piękne czasy, kiedy mimo braku komórek i internetu wszyscy się jakoś tam znali i trzymali kontakt i niebawem dostaliśmy info, że chciałby to wydać Sebastian z ABC Tapes. W tym czasie kompletnie jeszcze nie umieliśmy grać, ale chyba nikogo to specjalnie nie obchodziło. I tak w niedługim czasie mogliśmy się jarać pierwszym "oficjalnym" wydawnictwem.',
     songs:[
       {title:'1. Intro', 
         link:''},
@@ -55,7 +55,7 @@ export const tapes = [
     label:'Tylko Pank',
     medium:'Kaseta',
     foto:'/images/kto.jpg',
-    description:' Pierwszy materiał nagrany w studio - bodajże "Gamma Studio" dla wydawnictwa Tylko Pank',
+    description:'Do "Tylko Panka" trafiliśmy jeśli dobrze pamiętam za sprawą Janusza. Rozmawialiśmy podczas którejśtam czad-giełdy i wyszło na to, że jest gość, który chce nam zapłacić za prawdziwe studio nagrań, wydać naszą kasetę, a potem jeszcze zostawić nam na rozdawkę ze sto chyba tychże kaset. Dla smyków jakimi wtedy byliśmy nie było opcji, żeby z tego nie skorzystać. Studio było faktycznie profesjonalne (Gamma), zresztą funkcjonuje po dziś dzień. Natomiast realizator chyba po raz pierwszy w życiu mierzył się z czymś takim jak nasz materiał. Do dziś jak tego słucham to się zastanawiam jak można było z takiego studia wyciągnąć tak beznadziejne brzmienie:) Ale na tamte czasy jaraliśmy się na maxa jakością tego nagrania i samym faktem, że wogóle jest! Materiał technicznie czy aranżacyjnie niewiele lepszy od poprzedniego. Ja zawsze bardzo lubiłem "Uciekającą wolność" i chyba nie tylko ja, bo przecież ten numer dał nam przepustkę na małą scenę w Jarocinie`94. ',
     songs:[
       {title:'1. Próba mikrofonu', 
         link:''},
@@ -108,7 +108,7 @@ export const tapes = [
     label:'Tylko Pank',
     medium:'Kaseta',
     foto:'/images/mijajacy.jpg',
-    description:' Drugi materiał nagrany w studio - bodajże "Gamma Studio" dla wydawnictwa Tylko Pank',
+    description:' Minął rok i nazbieraliśmy utworów na kolejny materiał. Ponownie "Tylko Pank" i ponownie "Gamma" studio. Tym razem jednak jest już nieco inaczej. I realizacja nieco lepsza i niektóre aranżacje wychodzą poza zmianę tempa tych samych akordów :). Z perspektywy czasu dopiero zdaję sobie sprawę jak bardzo w niektórych naszych utworach słychać inspiracje tym co akurat przewijało się w naszych odtwarzaczach: "Rasizm" - Conflictowo-Włochate klimaty, "Kto" - Apatia z czasów "Odejdź lub zostań", a "Czemu jesteście" to próba zagrania crustowatych łamańców ala Sen Wariata... I to jak się później okazało były ostatnie nagrania z pierwszego okresu działalności zespołu. Okresu chyba głównie za sprawą wydawcy określanego często jako punko-polowy. Natomiast niezaprzeczalną zaletą "Tylko Panka" był zasięg i dzięki temu te wydawnictwa dotarły naprawdę do wielu osób.',
     songs:[
       {title:'1. Izba', 
       link:'/audio/Mijajacy/01.mp3'},
@@ -150,10 +150,9 @@ export const tapes = [
     label:'Jimmy Jazz Records',
     medium:'CD/LP',
     foto:'/images/niebedziemy.jpg',
-    description:'Pierwszy materiał wydany na CD (Jimmy Jazz records, nagramy w Diamond Recordings Studio',
+    description:'Pierwszy materiał nagrany po reakywacji zespołu. Minęło 9 lat. To już była inna era, kasety umarły, rządziły CD. Muzycznie na scenę wlał trochę świeżości streetpunk. Mogę śmiało stwierdzić, że ówczesna twórczość Analogsów czy Perkele to były rzeczy, dzięki którym wróciliśmy do grania. Wiele osób postrzegało falę streetpunka lat 2000-nych jako swojego rodzaju modę. Ja natomiast widzę to jako naturalne następstwo fali punka początku lat 90-tych. Ludzie po prostu byli starsi, mieli inne problemy, część szczeniackich utopijnych haseł zweryfikowało dorosłe życie. Przybyło za to kilogramów, wypitych piw i pewności siebie. Częściowo ta płyta jest już mocno pod takim wpływem choć jest na niej też część utworów, które powstały w poprzednim okresie istnienia zespołu, ale nie zdążyły zostać utrwalone. Myślę, że każdy bez problemu odgadnie, które pochodzą z którego okresu. Płytę nagraliśmy własnym sumptem w studio w Giebułtowie, a wydana zostałą przez Jimmy Jazz Records.',
     songs:[
-
-      {title:'1. Urzędy', 
+    {title:'1. Urzędy', 
       link:''},
     {title:'2. Nie będziemy', 
       link:''},
@@ -193,14 +192,13 @@ export const tapes = [
   },
 
   {
-    title:'???????????',
+    title:'Kastracja',
     year:2005,
-    label:'JKastracja',
+    label:'Kastracja',
     medium:'CD/LP',
     foto:'/images/niebedziemy.jpg',
-    description:'Nigdy nie wydany materiał',
+    description:'Drugi materiał po reaktywacji nagrany również u Dominika w Giebułtowie. Do tego momentu zdecydowanie najlepiej zagrany i nagrany materiał, a jednak nigdy nie doczekał się wydania w całości. Dwa z tych utworów znalazły się na wydanej przez Jimmy Jazz "Prowadź mnie ulico vol.2, a kolejny na wydanej przez Olifant Records "Muzyka ulicy muzyka dla mas vol.2". Jak wskazują choćby powyższe nazwy składanek stylistycznie to już był streetpunk i tak już zostało do końca naszej działalności',
     songs:[
-
     {title:'1. Skinhead & punk (muz. ACAB)', 
       link:''},
     {title:'2. Nie mówcie nam', 
@@ -209,7 +207,7 @@ export const tapes = [
       link:''},
     {title:'4. Polska', 
       link:''},
-    {title:'5. Musisz Walczyć', 
+    {title:'5. Musisz Walczyć (muz. Perkele)', 
       link:''},
     {title:'6. Kufel piwa', 
       link:''},
@@ -235,7 +233,7 @@ export const tapes = [
     label:'Jimmy Jazz Records',
     medium:'CD/VA',
     foto:'/images/prowadz.jpg',
-    description:' Druga część składanki prezentującej wykonawców związanych z wytwórnią JIMMY JAZZ RECORDS. O ile pierwsza część samplera zawierała w większości nagrania znane z płyt zrealizowanych w okresie 1995-2004, pochodzących z katalogu Jimmy Jazz Records i jej poprzedniczki, wytwórni Rock’n’roller, o tyle obecne wydawnictwo w zdecydowanej większości zawiera nagrania premierowe, które stanowią zapowiedź kolejnych tytułów z katalogu wytwórni, bądź powstały specjalnie z myślą o tej składance. O sile "Prowadź mnie ulico vol. 2” stanowi bezsprzecznie obecność na niej m.in. nowych nagrań takich tuzów wytwórni jak KOMETY, THE ANALOGS (utwory premierowe + dwie kompozycje dostępne dotychczas tylko na płycie winylowej) czy VESPA i SMAMPARARAS (nowy utwór w wersji koncert6owej) oraz bardzo obiecujących debiutantów pokroju P.D.S., BANG BANG, NOWEGO ŚWIATA czy THE KOLT złożonych z muzyków (i ex-muzyków) grup ROBOTIX i SKARPETA. Doskonała płyta pokazująca stan posiadania JIMMY JAZZ RECORDS w 2005 roku i spora dawka nowych nagrań znanych wykonawców w specjalnej cenie.',
+    description:' Szczerze przyznam, że nie bardzo znam tą płytę więc przytoczę za empik.com: "Druga część składanki prezentującej wykonawców związanych z wytwórnią JIMMY JAZZ RECORDS. O ile pierwsza część samplera zawierała w większości nagrania znane z płyt zrealizowanych w okresie 1995-2004, pochodzących z katalogu Jimmy Jazz Records i jej poprzedniczki, wytwórni Rock’n’roller, o tyle obecne wydawnictwo w zdecydowanej większości zawiera nagrania premierowe, które stanowią zapowiedź kolejnych tytułów z katalogu wytwórni, bądź powstały specjalnie z myślą o tej składance. O sile "Prowadź mnie ulico vol. 2” stanowi bezsprzecznie obecność na niej m.in. nowych nagrań takich tuzów wytwórni jak KOMETY, THE ANALOGS (utwory premierowe + dwie kompozycje dostępne dotychczas tylko na płycie winylowej) czy VESPA i SMAMPARARAS (nowy utwór w wersji koncert6owej) oraz bardzo obiecujących debiutantów pokroju P.D.S., BANG BANG, NOWEGO ŚWIATA czy THE KOLT złożonych z muzyków (i ex-muzyków) grup ROBOTIX i SKARPETA. Doskonała płyta pokazująca stan posiadania JIMMY JAZZ RECORDS w 2005 roku i spora dawka nowych nagrań znanych wykonawców w specjalnej cenie."',
     songs:[
 
       {title:'1. The Analogs–	Oi! Oi! Oi!', 
@@ -298,7 +296,7 @@ export const tapes = [
     label:'Olifant Records',
     medium:'CD/VA',
     foto:'/images/mumdm2.jpg',
-    description:'Na płycie znajdziecie większości dotychczas niepublikowane lub unikatowe nagrania zespolów: Rezystencja, Bulbulators, Gits, all bandits, Junkers, Skankan, PoProstu, Horrorshow, Lumpex75, BTM, Zbeer, Alarm, Sztorm68, Rozbiesz Się, Werwolf77, Bachor, Bilety Do Kontroli, Awantura i Ramzes&theHooligans. ',
+    description:'Pomijając naszą obecność to zdecydowanie moja ulubiona składanka z tego gatunku. Naprawdę w większości mega hiciory, do dziś często wracam do tej płyty. Polecam każdemu! No i miło było znaleźć się tu obok takich tuzów jak Ramzes czy Po Prostu ',
     songs:[
 
     {title:'01. The Gits - Muzyka dla elity', 
@@ -331,11 +329,11 @@ export const tapes = [
       link:''},
     {title:'15. Ramzes & the hooligans -Skok na kiosk', 
       link:''},
-    {title:'16.Po prostu - Napierdalamlam dyskomana', 
+    {title:'16. Po prostu - Napierdalam dyskomana', 
       link:''},
     {title:'17. Awaria - Pierwszy raz', 
       link:''},
-    {title:'18.  Bachor - Przemoc', 
+    {title:'18. Bachor - Przemoc', 
       link:''},
     {title:'19. Skunx - Skinhead', 
       link:''},
@@ -353,10 +351,10 @@ export const tapes = [
     label:'Kastracja',
     medium:'CD/LP',
     foto:'/images/jak.jpg',
-    description:'Ostatnie nagrania pochodzące z 2011 roku',
+    description:'Ostatnie nasze nagrania zrealizowane w studio w Dworku Biołoprądnickim. Można powiedzieć, że to takie podsumowanie ostatniego okresu działalności, po dołączeniu Katiapa i to w zdecydowanej większości jego kompozycje. Muzycznie - streetpunkowo, tekstowo - to co się wtedy u nas działo czyli głównie imprezy i refleksje na ciężkim kacu :). Materiał też niestety nigdy nie ujrzał oficjalnie światła dziennego. Byliśmy bardzo blisko wydania go własnym sumptem, ale w pewnym momencie brakło determinacji. Jakiś czas temu wrzuciłem ten materiał na bandcampa do odsłuchu. Widziałem też, że ktoś go stamtąd zgrał i wrzucił na YT wię część z Was może już go słyszało, lecz pod inną nazwą (tytuł płyty na YT to inwencja własna udostępniającego).',
     songs:[
 
-      {title:'1. Kastracja', 
+    {title:'1. Kastracja', 
       link:''},
     {title:'2. Nie uciekam stąd', 
       link:''},
@@ -393,14 +391,14 @@ export const tapes = [
     label:'Olifant Records',
     medium:'CD/VA',
     foto:'/images/mumdm3.jpg',
-    description:'Na płycie znajdziecie większości dotychczas niepublikowane lub unikatowe nagrania zespolów: Rezystencja, Bulbulators, Gits, all bandits, Junkers, Skankan, PoProstu, Horrorshow, Lumpex75, BTM, Zbeer, Alarm, Sztorm68, Rozbiesz Się, Werwolf77, Bachor, Bilety Do Kontroli, Awantura i Ramzes&theHooligans. ',
+    description:'Kolejna odsłona składanki z Olifanta, myślę, że trzyma poziom :)',
     songs:[
 
     {title:'01. Skunx–	Wystarczy Iskra', 
       link:''},
     {title:'2. Contra Boys–	Zasady Życia', 
       link:''},
-    {title:'3. Junkers*–	Serce Chuligana ', 
+    {title:'3. Junkers –	Serce Chuligana ', 
       link:''},
     {title:'4. Lumpex 75*–	Westerplatte', 
       link:''},
@@ -438,7 +436,7 @@ export const tapes = [
       link:''},
     {title:'21. Gan –	Generał Maczek', 
       link:''},
-    {title:'22. Junkers*–	Mowa Nienawiści', 
+    {title:'22. Junkers –	Mowa Nienawiści', 
       link:''},
     {title:'23. Motor Dead–	Dobry Kij', 
       link:''},
@@ -447,3 +445,4 @@ export const tapes = [
 
 ]
 
+export const recordings ='Chyba każdy kto tworzy jakieś dźwięki ma ochotę ich posłuchać w domowym zaciszu, czy wogóle utrwalić i móc odtworzyć w dowolnym momencie. Nas też to zawsze bardzo jarało i staraliśmy się wykorzystywać każdą okazję do tego by coś nagrać. Do tego kilka z tych rzeczy udało się pokazać szerszej publice dzięki oficjalnym wydawnictwom. Poniżej znajdziecie chyba wszystko co zostało przez nas zarejestrowane. Póki co do odsłuchu będzie zawsze kilka utworów. Jeśli strona kiedyś wyląduje na jakimś porządnym hostingu do docelowo będzie oczywiście wszystko!'

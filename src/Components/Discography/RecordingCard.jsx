@@ -50,8 +50,8 @@ export default function RecordingCard({ match }) {
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
           {id < 3 ?
-            <CasetteCard title={tapes[id].title} year={tapes[id].year} label={tapes[id].year} medium={tapes[id].medium} foto={tapes[id].foto} description={tapes[id].description} songs={tapes[id].songs} /> :
-            <CdCard title={tapes[id].title} year={tapes[id].year} label={tapes[id].year} medium={tapes[id].medium} foto={tapes[id].foto} description={tapes[id].description} songs={tapes[id].songs} />}
+            <CasetteCard title={tapes[id].title} year={tapes[id].year} label={tapes[id].label} medium={tapes[id].medium} foto={tapes[id].foto} description={tapes[id].description} songs={tapes[id].songs} /> :
+            <CdCard title={tapes[id].title} year={tapes[id].year} label={tapes[id].label} medium={tapes[id].medium} foto={tapes[id].foto} description={tapes[id].description} songs={tapes[id].songs} />}
         </Container>
       </Slide>
     </div >
