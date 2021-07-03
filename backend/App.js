@@ -29,6 +29,3 @@ app.use('/guestBookPosts', guestBookPostRouter);
 
 app.listen(port, ()=> console.log(`server is listening on ${port}`));
 
-// app.get("/", (req, res) => {
-//   res.send('hejkl')
-// })
