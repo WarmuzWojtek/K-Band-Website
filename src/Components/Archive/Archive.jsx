@@ -4,8 +4,6 @@ import Slide from '@material-ui/core/Slide';
 import '../../App.css'
 
 
-
-
 const useStyles = makeStyles((theme) => {
   return {
     root: {
@@ -14,7 +12,6 @@ const useStyles = makeStyles((theme) => {
       justifyContent: 'space-evenly',
       padding: theme.spacing(5),
       margin: '0 auto',
-
     },
     title: {
       fontFamily: 'Nunito',
@@ -24,14 +21,11 @@ const useStyles = makeStyles((theme) => {
       textAlign: 'center',
       color: 'white',
     },
-
     bcg: {
       background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)',
       marginTop: '10vh',
       minHeight: '90vh',
     },
-
-
   }
 })
 

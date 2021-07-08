@@ -1,6 +1,5 @@
 import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import { PeopleDecs } from '../../Constants/Friends'
 import Slide from '@material-ui/core/Slide';
 import { tapes } from '../../Constants/Recordings'
 import SmallRecordingCard from "./SmallRecordings"
@@ -49,7 +48,7 @@ export default function Discography() {
           <Typography className={classes.title} variant='h4'>Nagrania</Typography>
           <Typography className={classes.desc} variant='h6'>{recordings} </Typography>
           {tapes.map((tape, index) =>
-            <SmallRecordingCard title={tape.title} year={tape.year} label={tape.label} medium={tape.medium} foto={tape.foto} id={index} />)}
+            <SmallRecordingCard key={tape.title} title={tape.title} year={tape.year} label={tape.label} medium={tape.medium} foto={tape.foto} id={index} />)}
         </Container>
       </Slide>
     </div >

@@ -20,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: '15%',
     backgroundRepeat: 'no-repeat',
     backgroundColor: 'rgba(255,255,255,0.6)',
-    // '@media(max-width:600px)': {
-    //   width: 345,
-    // },
   },
   image: {
     width: 200,

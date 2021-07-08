@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => {
   }
 })
 
-
 export default function GuestBook() {
   const classes = useStyles();
 

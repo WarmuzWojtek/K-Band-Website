@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   logo: {
+    cursor: 'pointer',
     width: '20%',
     marginLeft: theme.spacing(3),
     '@media(max-width:960px)': {
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     height: '10vh',
     justifyContent: 'center',
     padding: theme.spacing(5),
-    borderBottom: '7px solid white',
+    borderBottom: '5px solid white',
   },
   toolbar: {
     display: 'flex',
