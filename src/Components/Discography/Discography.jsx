@@ -17,6 +17,12 @@ const useStyles = makeStyles((theme) => {
       '@media(max-width:660px)': {
         padding: theme.spacing(2),
       },
+      '@media(max-width:460px)': {
+        paddingLeft: theme.spacing(3),
+        paddingRight: theme.spacing(3),
+        paddingTop: theme.spacing(5),
+        paddingBottom: theme.spacing(5),
+      },
 
     },
     title: {

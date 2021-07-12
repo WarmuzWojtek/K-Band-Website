@@ -13,12 +13,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'rgba(220,220,220,1)',
     border: '2px solid #000',
-    boxShadow: theme.shadows[5],
+    boxShadow: theme.shadows[15],
     padding: theme.spacing(2, 4, 3),
     maxHeight: '70vh',
-    overflowY: 'scroll',
+    borderRadius: '5px',
   },
   btn: {
     margin: '0 auto',

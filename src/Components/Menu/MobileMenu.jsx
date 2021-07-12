@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
     '@media(max-width:360px)': {
       fontSize: '1.2em',
-      marginRight: theme.spacing(4),
+      // marginRight: theme.spacing(2),
     },
   },
   item: {

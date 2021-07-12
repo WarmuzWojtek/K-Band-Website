@@ -11,6 +11,12 @@ const useStyles = makeStyles((theme) => {
       justifyContent: 'space-evenly',
       padding: theme.spacing(5),
       margin: '0 auto',
+      '@media(max-width:460px)': {
+        paddingLeft: theme.spacing(3),
+        paddingRight: theme.spacing(3),
+        paddingTop: theme.spacing(5),
+        paddingBottom: theme.spacing(5),
+      },
 
     },
     title: {
