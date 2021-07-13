@@ -36,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     padding: theme.spacing(5),
     borderBottom: '5px solid white',
+    '@media(max-width:460px)': {
+      padding: theme.spacing(2),
+      height: '15vh',
+    },
   },
   toolbar: {
     display: 'flex',

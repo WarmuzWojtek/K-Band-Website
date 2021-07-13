@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import { useViewport } from '../../Hook/useViewport'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -16,13 +17,16 @@ const useStyles = makeStyles((theme) => ({
   details: {
     display: 'flex',
     flexDirection: 'column',
+
   },
   content: {
     flex: '1 0 auto',
+
   },
   cover: {
     width: 151,
-
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
     padding: theme.spacing(2),
   },
   controls: {
@@ -35,9 +39,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MediaControlCard({ title, link, foto }) {
   const classes = useStyles();
+  const { width } = useViewport();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} elevation={10}>
       <div className={classes.details}>
         <CardContent className={classes.content} >
           <Typography component="h5" variant="h5">
@@ -53,12 +58,12 @@ export default function MediaControlCard({ title, link, foto }) {
           </audio>
         </div>
       </div>
-      <CardMedia
-        // src={process.env.PUBLIC_URL + '/audio/01.mp3'}
-        className={classes.cover}
-        image={process.env.PUBLIC_URL + foto}
-        title="Live from space album cover"
-      />
+      {width > 860 ?
+        <CardMedia
+          className={classes.cover}
+          image={process.env.PUBLIC_URL + foto}
+          title=""
+        /> : null}
     </Card>
   );
 }

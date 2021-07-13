@@ -47,11 +47,13 @@ const useStyles = makeStyles((theme) => {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            width: '40%',
+            width: '35%',
             background: 'none',
+            paddingLeft: theme.spacing(2),
             '@media(max-width:960px)': {
                 width: '90%',
                 minHeight: '25vh',
+                paddingLeft: 0,
             },
         },
         legend: {

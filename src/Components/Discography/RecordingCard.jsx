@@ -17,6 +17,12 @@ const useStyles = makeStyles((theme) => {
       '@media(max-width:660px)': {
         padding: theme.spacing(2),
       },
+      '@media(max-width:460px)': {
+        paddingLeft: theme.spacing(3),
+        paddingRight: theme.spacing(3),
+        paddingTop: theme.spacing(8),
+        paddingBottom: theme.spacing(2),
+      },
 
     },
     title: {
@@ -43,7 +49,6 @@ export default function RecordingCard({ match }) {
   const classes = useStyles();
 
   const id = match.params.id.slice(1, 2);
-
 
   return (
     <div className={classes.bcg}>

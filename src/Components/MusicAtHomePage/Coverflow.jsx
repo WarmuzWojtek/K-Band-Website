@@ -17,13 +17,21 @@ export default function Coverflows() {
         enableHeading={false}
         infiniteScroll
         media={{
+          '@media (max-width: 900px)': {
+            width: '600px',
+            height: '300px'
+          },
           '@media (max-width: 660px)': {
             width: '400px',
             height: '300px'
           },
-          '@media (max-width: 900px)': {
-            width: '600px',
+          '@media (max-width: 460px)': {
+            width: '400px',
             height: '300px'
+          },
+          '@media (max-width: 380px)': {
+            width: '300px',
+            height: '150px'
           },
           '@media (min-width: 900px)': {
             width: '960px',
