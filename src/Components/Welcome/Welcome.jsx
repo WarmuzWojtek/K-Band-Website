@@ -83,13 +83,10 @@ export default function Main() {
                 Na początek przede wszystkim:
               </Typography>
               <Typography variant='h4' className={classes.title}>
-                Witajcie Punki i Skiny!
+                Witajcie!
               </Typography>
               <Typography variant='h6' className={classes.content} color="textSecondary">
-                Przez około 20 lat działalności na scenie praktycznie nie istnieliśmy w sieci. Ostatecznie kilka lat po "śmierci" oddajemy Wam do poczytania/posłuchania/pooglądania to co po nas jeszcze gdzieś tam zostało, a co wg nas jest na tyle wartościowe, że można to bez większego przypału pokazać. Będzie tu trochę informacji, będzie trochę muzyki, a być może nawet jakieś miejsce do dyskusji, wspomnień , komentarzy. Bardzo nam miło, że tu trafiliście. Może nawet trochę wpisów na okołomuzyczne tematy... Miłego! PUNK`s NOT DEAD!
-              </Typography>
-              <Typography variant="h6" component="p">
-                ZAPRASZAMY!
+                Przez około 20 lat działalności na scenie praktycznie nie istnieliśmy w sieci. Ostatecznie kilka lat po "śmierci" oddajemy Wam do poczytania/posłuchania/pooglądania to co po nas jeszcze gdzieś tam zostało, a co wg nas jest na tyle wartościowe, że można to bez większego przypału pokazać. Będzie tu trochę informacji, będzie trochę muzyki, a być może nawet jakieś miejsce do dyskusji, wspomnień , komentarzy. Może nawet trochę wpisów na okołomuzyczne tematy... Póki co tylko ja tutaj piszę (Rudy) więc jest to mój subiektywny punkt widzenia na to co się u nas działo, ale niewykluczone, że to się kiedyś zmieni. Pozdro. R.
               </Typography>
             </CardContent>
           </Card>

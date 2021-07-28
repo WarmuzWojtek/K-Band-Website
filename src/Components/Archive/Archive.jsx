@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => {
       },
     },
     title: {
+      lineHeight: '100px',
       fontFamily: 'Mustasurma',
       fontSize: '54px',
       width: '100%',
@@ -29,12 +30,19 @@ const useStyles = makeStyles((theme) => {
       color: 'black',
       '@media(max-width:460px)': {
         fontSize: '36px',
+        lineHeight: '72px',
       },
     },
+    desc: {
+      fontFamily: 'Nunito',
+      color: 'black',
+      marginBottom: theme.spacing(5),
+      textAlign: 'center',
+    },
     bcg: {
-      background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)',
+      background: 'linear-gradient(40deg, #aaaaaa,#f2f2f2,#aaaaaa)',
+      paddingTop: theme.spacing(1),
       marginTop: '10vh',
-      minHeight: '90vh',
     },
   }
 })

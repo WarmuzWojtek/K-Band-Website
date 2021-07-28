@@ -340,7 +340,7 @@ export const tapes = [
     {title:'20. Trinkers - Nasze orły', 
       link:''},
     {title:'21. Kastracja - Musisz walczyć', 
-      link:''},
+      link:'/audio/MUMDM2/21.mp3'},
     {title:'22. Skambomambo - Ska made in polska', 
       link:''},
     ]
@@ -413,7 +413,7 @@ export const tapes = [
     {title:'9. Komando Bimber–	W Pętli Czasu', 
       link:''},
     {title:'10. Kastracja–	Pamiętaj O Przyjaźni', 
-      link:''},
+      link:'/audio/MUMDM3/10.mp3'},
     {title:'11. Prawy Prosty–	Honor I Duma', 
       link:''},
     {title:'12. The Gits–	Sasza Boy', 
@@ -445,4 +445,4 @@ export const tapes = [
 
 ]
 
-export const recordings ='Chyba każdy kto tworzy jakieś dźwięki ma ochotę ich posłuchać w domowym zaciszu, czy wogóle utrwalić i móc odtworzyć w dowolnym momencie. Nas też to zawsze bardzo jarało i staraliśmy się wykorzystywać każdą okazję do tego by coś nagrać. Do tego kilka z tych rzeczy udało się pokazać szerszej publice dzięki oficjalnym wydawnictwom. Poniżej znajdziecie chyba wszystko co zostało przez nas zarejestrowane. Póki co do odsłuchu będzie zawsze kilka utworów. Jeśli strona kiedyś wyląduje na jakimś porządnym hostingu do docelowo będzie oczywiście wszystko!'
+export const recordings ='Chyba każdy kto tworzy jakieś dźwięki ma ochotę ich posłuchać w domowym zaciszu, czy wogóle utrwalić i móc odtworzyć w dowolnym momencie. Nas też to zawsze bardzo cieszyło i staraliśmy się wykorzystywać każdą okazję do tego by coś nagrać. Do tego kilka z tych rzeczy udało się pokazać szerszej publice dzięki oficjalnym wydawnictwom. Poniżej znajdziecie chyba wszystko co zostało przez nas zarejestrowane. Póki co do odsłuchu będzie zawsze kilka utworów. Jeśli strona kiedyś wyląduje na jakimś porządnym hostingu do docelowo będzie oczywiście wszystko!'
