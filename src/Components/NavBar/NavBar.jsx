@@ -62,7 +62,7 @@ export default function NavBar() {
     <div className={classes.root}>
       <AppBar className={classes.bcg} position="fixed">
         <Toolbar className={classes.toolbar} >
-          <img onClick={handleReload} className={classes.logo} src={process.env.PUBLIC_URL + '/images/logo.png'} alt='logo' />
+          <img onClick={handleReload} className={classes.logo} src={process.env.PUBLIC_URL + '/images/logo1.png'} alt='logo' />
           {(width < 960) ? <MobileMenu /> : <BigMenu />}
         </Toolbar>
       </AppBar>
