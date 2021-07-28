@@ -65,6 +65,7 @@ const useStyles = makeStyles((theme) => {
     },
     videoDecsription: {
       marginBottom: theme.spacing(1),
+      color: 'black',
     },
     frame: {
       width: 560,
