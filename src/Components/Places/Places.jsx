@@ -21,25 +21,29 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
-      fontFamily: 'Nunito',
+      fontFamily: 'Mustasurma',
+      fontSize: '54px',
       width: '100%',
       marginBottom: theme.spacing(5),
-      borderBottom: '3px solid white',
+      borderBottom: '3px solid black',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
+      '@media(max-width:460px)': {
+        fontSize: '36px',
+      },
     },
     desc: {
       fontFamily: 'Nunito',
-      color: 'white',
+      color: 'black',
       marginBottom: theme.spacing(5),
       textAlign: 'center',
     },
     bcg: {
-      background: 'linear-gradient(40deg, #000000,#a7a6a5,#000000)',
+      background: 'linear-gradient(40deg, #222222,#e6e4e3,#222222)',
       marginTop: '10vh',
     },
     textPaper: {
-      color: 'white',
+      color: 'black',
       background: 'none',
       width: '70%',
       marginTop: theme.spacing(5),

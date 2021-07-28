@@ -20,12 +20,16 @@ const useStyles = makeStyles((theme) => {
       },
     },
     title: {
-      fontFamily: 'Nunito',
+      fontFamily: 'Mustasurma',
+      fontSize: '54px',
       width: '100%',
       marginBottom: theme.spacing(5),
-      borderBottom: '3px solid white',
+      borderBottom: '3px solid black',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
+      '@media(max-width:460px)': {
+        fontSize: '36px',
+      },
     },
     bcg: {
       background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)',

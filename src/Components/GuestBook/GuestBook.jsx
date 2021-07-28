@@ -21,21 +21,25 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
-      fontFamily: 'Nunito',
+      fontFamily: 'Mustasurma',
+      fontSize: '54px',
       width: '100%',
       marginBottom: theme.spacing(5),
-      borderBottom: '3px solid white',
+      borderBottom: '3px solid black',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
+      '@media(max-width:460px)': {
+        fontSize: '36px',
+      },
     },
     desc: {
       fontFamily: 'Nunito',
-      color: 'white',
+      color: 'black',
       marginBottom: theme.spacing(5),
       textAlign: 'center',
     },
     bcg: {
-      background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)',
+      background: 'linear-gradient(40deg, #222222,#e6e4e3,#222222)',
       marginTop: '10vh',
     }
   }
@@ -48,7 +52,7 @@ export default function GuestBook() {
     <div className={classes.bcg}>
       <Slide direction="left" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
-          <Typography className={classes.title} variant='h4'>Księga gości</Typography>
+          <Typography className={classes.title} variant='h4'>Wpisy, wpisy...</Typography>
           <Typography className={classes.desc} variant='h6'>Baaaardzo prehistoryczna formuła, ale postaowiłem sprawdzić jak to będzie wyglądało w dzisiejszych czasach. Będzie nam bardzo miło jeśli zostawisz tu coś jeśli będziesz miał/miała ochotę. Jeśli natomiast masz jakąś sprawę i liczysz na odpowiedź po zapraszamy na maila lub do formularza kontaktowego. </Typography>
           <GuestBookForm />
         </Container>

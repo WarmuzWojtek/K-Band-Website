@@ -21,16 +21,20 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
-      fontFamily: 'Nunito',
+      fontFamily: 'Mustasurma',
+      fontSize: '54px',
       width: '100%',
       marginBottom: theme.spacing(5),
-      borderBottom: '3px solid white',
+      borderBottom: '3px solid black',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
+      '@media(max-width:460px)': {
+        fontSize: '36px',
+      },
     },
     desc: {
       fontFamily: 'Nunito',
-      color: 'white',
+      color: 'black',
       marginBottom: theme.spacing(5),
       textAlign: 'center',
     },
@@ -41,7 +45,7 @@ const useStyles = makeStyles((theme) => {
       minHeight: '90vh',
     },
     link: {
-      color: 'black',
+      color: 'white',
       marginLeft: theme.spacing(2),
       marginRight: theme.spacing(2),
     }
