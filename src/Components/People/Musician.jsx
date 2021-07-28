@@ -23,14 +23,15 @@ const useStyles = makeStyles((theme) => {
       justifyContent: 'space-between',
       flexDirection: 'column',
       fontFamily: 'Nunito',
-      // color: 'white',
+      color: 'white',
       width: 345,
       maxWidth: 345,
       marginBottom: theme.spacing(5),
       paddingBottom: theme.spacing(2),
-      // backgroundColor: 'rgba(0,0,0,0.2)',
-      backgroundColor: 'rgba(255,255,255,0.6)',
-      color: 'black',
+      background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)'
+      // backgroundColor: 'rgba(80,80,80,0.9)',
+      // backgroundColor: 'rgba(255,255,255,0.6)',
+      // color: 'black',
 
     },
     image: {
@@ -68,16 +69,10 @@ const useStyles = makeStyles((theme) => {
       display: 'flex',
       margin: theme.spacing(0, 1),
       padding: theme.spacing(2),
-      // backgroundImage: `url(${process.env.PUBLIC_URL + 'images/punkpin.png'})`,
       backgroundSize: 'cover',
       backgroundColor: 'rgba(255,255,255,0.2)',
       width: 445,
       minHeight: 345,
-      // '@media(max-width:460px)': {
-      //   width: 345,
-
-      // },
-
     },
     info: {
       alignSelf: 'center',

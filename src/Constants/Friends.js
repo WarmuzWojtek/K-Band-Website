@@ -31,7 +31,7 @@ export const people = [
     name:'Mały',
     foto:'/images/maly.jpg',
     desc:'Gitarzysta, wokalista, autor tekstów',
-    more:'Mały - właściwie Tomasz Kuprowski. Dołączył do zespołu w pierwszych tygodniach jego istnienia. Przyszedł by spróbować gry na basie, ale szybko okazało się, że znacznie lepiej radzi sobie na gitarze i to również lepiej niż Jędrek, który na pierwszych próbach był właśnie gitarzystą. I tak już zostało na lata. Napisał też sporo tekstów, czasami udzielał się wokalnie. Dopiero 2005 roku, gdy Mały wyjechał do UK, po jakimś czasie gitarzystą został Katiap. Po powrocie Małego graliśmy czasami na 2 gitary. '
+    more:'Mały - właściwie Tomasz Kuprowski. Dołączył do zespołu w pierwszych tygodniach jego istnienia. Przyszedł by spróbować gry na basie, ale szybko okazało się, że znacznie lepiej radzi sobie na gitarze i to również lepiej niż Jędrek, który na pierwszych próbach był właśnie gitarzystą. I tak już zostało na lata. Napisał też sporo tekstów, nierzadko udzielał się wokalnie. Dopiero 2005 roku, gdy Mały wyjechał do UK, po jakimś czasie gitarzystą został Katiap. Po powrocie Małego graliśmy czasami na 2 gitary. '
   },
   {
       name:'Rudy',
@@ -43,7 +43,7 @@ export const people = [
         name:'Jędrek',
         foto:'/images/andrzej.jpg.jpg',
         desc:'Wokalista, autor tekstów',
-        more:'Jędrek - właściwie Andrzej Głuszek. Na pierwszej próbie zaczynał od gitary, ale ostatecznie został wokalistą, napisał większość tekstów. Do tego dusza towarzystwa i gość z największym poczuciem humoru z całej ekipy.'
+        more:'Jędrek - właściwie Andrzej Głuszek. Jeden z założycieli zespołu. Na pierwszej próbie zaczynał od gitary, ale ostatecznie został wokalistą, napisał większość tekstów. Do tego dusza towarzystwa i gość z największym poczuciem humoru z całej ekipy.'
   },
   {
       name:'Katiap',
