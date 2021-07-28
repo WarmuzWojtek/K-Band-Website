@@ -5,6 +5,7 @@ import Slide from '@material-ui/core/Slide';
 import { people, PeopleDecs } from '../../Constants/Friends'
 import '../../App.css'
 
+
 const useStyles = makeStyles((theme) => {
   return {
     root: {
@@ -22,22 +23,27 @@ const useStyles = makeStyles((theme) => {
 
     },
     title: {
-      fontFamily: 'Nunito',
+      fontFamily: 'Mustasurma',
+      fontSize: '54px',
       width: '100%',
       marginBottom: theme.spacing(5),
-      borderBottom: '3px solid white',
+      borderBottom: '3px solid black',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
+      '@media(max-width:460px)': {
+        fontSize: '36px',
+      },
     },
     desc: {
       fontFamily: 'Nunito',
-      color: 'white',
+      color: 'black',
       marginBottom: theme.spacing(5),
       textAlign: 'center',
     },
     bcg: {
-      background: 'linear-gradient(40deg, #000000,#c6c4c3,#000000)',
+      background: 'linear-gradient(40deg, #444444,#e6e4e3,#444444)',
       marginTop: '10vh',
+      paddingTop: theme.spacing(3),
     },
     image: {
       width: '100vw',
@@ -55,7 +61,7 @@ export default function People() {
           <Typography className={classes.title} variant='h4'>Ludzie</Typography>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
           {people.map(musician =>
-            <MusicianCard key={musician.name} name={musician.name} foto={musician.foto} desc={musician.desc} />
+            <MusicianCard key={musician.name} name={musician.name} foto={musician.foto} desc={musician.desc} more={musician.more} />
           )}
         </Container>
       </Slide>

@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+@font-face {
+  font-family: Mustasurma;
+  src: url(../src/Fonts/Mustasurma.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Bohemian Typewriter;
+  src: url(../src/Fonts/BohemianTypewriter.ttf) format("truetype");
+}
+
+
 
 
 
