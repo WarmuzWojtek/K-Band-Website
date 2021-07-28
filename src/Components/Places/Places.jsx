@@ -108,7 +108,7 @@ export default function Places() {
             <Typography className={classes.place} variant='h6' align='justify'>{places[2].description}</Typography>
           </Paper>
           <Paper className={classes.imagesPaper} elevation={0}>
-            <img className={classes.placeImage} alt='' src={process.env.PUBLIC_URL + '/images/sckm.jpg'} />
+            <img className={classes.placeImage} alt='' src={process.env.PUBLIC_URL + '/images/salka.jpg'} />
           </Paper>
         </Container>
       </Slide>
