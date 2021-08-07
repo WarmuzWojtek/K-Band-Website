@@ -1,4 +1,4 @@
-import { Container, Typography, Paper } from "@material-ui/core"
+import { Container, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import MusicianCard from './Musician'
 import Slide from '@material-ui/core/Slide';
@@ -51,6 +51,13 @@ const useStyles = makeStyles((theme) => {
       width: '100vw',
       height: '80vh',
     },
+    slide: {
+      width: '100vw',
+      height: 400,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      marginBottom: theme.spacing(4),
+    },
   }
 })
 
@@ -61,6 +68,7 @@ export default function People() {
       <Slide direction="right" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
           <Typography className={classes.title} variant='h4'>Ludzie</Typography>
+          <div className={classes.slide} style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/people.jpg'})` }}></div>
           <Typography className={classes.desc} variant='h6'>{PeopleDecs} </Typography>
           {people.map(musician =>
             <MusicianCard key={musician.name} name={musician.name} foto={musician.foto} desc={musician.desc} more={musician.more} />

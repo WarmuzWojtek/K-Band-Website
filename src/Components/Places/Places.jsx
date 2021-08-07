@@ -75,7 +75,14 @@ const useStyles = makeStyles((theme) => {
     placeTitle: {
       fontFamily: 'Nunito',
       marginBottom: theme.spacing(3),
-    }
+    },
+    slide: {
+      width: '100vw',
+      height: 400,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      marginBottom: theme.spacing(4),
+    },
 
   }
 })
@@ -88,6 +95,7 @@ export default function Places() {
       <Slide direction="left" in={true} mountOnEnter unmountOnExit>
         <Container className={classes.root}>
           <Typography className={classes.title} variant='h4'>Miejsca</Typography>
+          <div className={classes.slide} style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/krk.jpg'})` }}></div>
           <Typography className={classes.desc} variant='h6'>{placesSubtitle}</Typography>
           <Paper className={classes.textPaper} elevation={0}>
             <Typography variant='h5' className={classes.placeTitle} align='right'>{places[0].name}</Typography>
