@@ -76,7 +76,7 @@ export default function GuestBookForm() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("https://kband.herokuapp.com/backend/guestBookPosts/")
+    axios.get("https://kband-api.herokuapp.com/guestBookPosts/")
       .then((response) => {
         setData(response.data);
       })
@@ -109,7 +109,7 @@ export default function GuestBookForm() {
       message: messageValue,
     }
 
-    axios.post("https://kband.herokuapp.com/backend/guestBookPosts/add", post)
+    axios.post("https://kband-api.herokuapp.com/guestBookPosts/add", post)
       .then(alert('Wpis dodany!'))
       ;
     window.location = '/ksiega';
